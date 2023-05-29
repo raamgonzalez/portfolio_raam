@@ -1,0 +1,42 @@
+.Marquee {
+	height: 25px;
+	width: 100%;
+
+	overflow: hidden;
+	position: relative;
+	background-color: $primary;
+	color: $base ;
+	border-bottom: 0.5px dotted $base;
+  letter-spacing: 0.2rem;
+
+}
+
+.Marquee div {
+	display: block;
+	width: 200%;
+	height: 30px;
+
+	position: absolute;
+	overflow: hidden;
+
+	animation: marquee 10s linear infinite;
+
+}
+
+.Marquee div:hover{
+	animation-play-state: paused;
+}
+
+.Marquee span {
+
+	float: left;
+	width: 50%;
+	font-family: $font-base;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+@keyframes marquee {
+	0% { left: 0; }
+	100% { left: -100%; }
+}

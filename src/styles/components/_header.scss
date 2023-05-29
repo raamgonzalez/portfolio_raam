@@ -1,0 +1,22 @@
+.Header{
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.NavBar{
+	position: fixed;
+	inset: 0;
+	top: 5%;
+
+	display: flex;
+	justify-content: center;
+	gap: 4.5rem;
+	margin: 2rem 0 0 0;
+
+	&-li{
+		color: $base;
+		font-size: $font-size-5;
+	}
+
+}
