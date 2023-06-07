@@ -1,18 +1,23 @@
 import './App.css'
-import About from './componentss/About'
-import Header from './componentss/Header'
-import Home from './componentss/Home'
-import Marquee from './componentss/Marquee'
+import About from './components/About'
+import Header from './components/Header'
+import Home from './components/Home'
+import ListOfProjects from './components/ListOfProjects'
+import Marquee from './components/Marquee'
+import GlobalContext from './context/GlobalContext'
 
 function App () {
   return (
     <>
-      <Marquee />
-      <section className='wrapper'>
-        <Header />
-        <Home />
-        <About />
-      </section>
+      <GlobalContext>
+        <Marquee />
+        <section className='wrapper'>
+          <Header />
+          <Home />
+          <About />
+          <ListOfProjects />
+        </section>
+      </GlobalContext>
     </>
   )
 }

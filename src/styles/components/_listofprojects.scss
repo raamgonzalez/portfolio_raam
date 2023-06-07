@@ -1,0 +1,46 @@
+.ListOfProjects{
+	margin: 40rem 0 0 0;
+
+	&-title{
+		font-size: $font-size-0;
+		margin: 0 0 10rem 0;
+		color: $secondary;
+	}
+	&-container{
+		display: flex;
+		flex-direction: column;
+		gap: 10rem;
+	}
+}
+
+.Project{
+	width: 100%;
+	display: flex;
+	padding: 0 0 1rem 0;
+	border-bottom: 0.5px dotted $base;
+  letter-spacing: 0.2rem;
+
+	&-img{
+		width: 33rem;
+		// aspect-ratio: 3/2;
+		// object-fit: contain;
+	}
+	&-description{
+		margin: 0 0 0 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 2rem;
+
+		font-family: $font-title;
+		
+		font-size: $font-size-3;
+		line-height: 2.5rem;
+	}
+	&-soft{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+}
