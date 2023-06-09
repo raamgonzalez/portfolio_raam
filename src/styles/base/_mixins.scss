@@ -8,6 +8,13 @@
 	gap: $gap;
 }
 
+@mixin titles(){
+	font-size: $font-size-4;
+	margin: 0 0 2rem 0;
+	color: $secondary;
+	font-family: $font-base-regular;
+}
+
 /* Mixins responsive */
 
 @mixin dp( $min : 768px, $max : 1260px ){

@@ -3,35 +3,61 @@
 
 
 //Imports fonts
+// @font-face {
+//   font-family: 'Mattone';
+//   src: url('./media/fonts/Mattone-150.woff2') format('woff2'), url('./fonts/Mattone-150.woff') format('woff');
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Garnet';
+//   src: url('./media/fonts/garnet/Garnett-Black.woff') format('woff');
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
 @font-face {
-  font-family: 'Mattone';
-  src: url('./media/fonts/Mattone-150.woff2') format('woff2'), url('./fonts/Mattone-150.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+  font-family: 'FormularBlack';
+  src: url('./media/fonts/formular/Formular-Black.woff') format('woff');
+  font-weight: bold;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Garnet';
-  src: url('./media/fonts/garnet/Garnett-Black.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+  font-family: 'FormularLight';
+  src: url('./media/fonts/formular/Formular-Light.woff') format('woff');
+  font-weight: bold;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'GarnetlightItalic';
-  src: url('./media/fonts/garnet/NyghtSerif-LightItalic.woff') format('woff');
-  font-weight: 300;
+  font-family: 'FormularRegular';
+  src: url('./media/fonts/formular/Formular.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Maregraphe';
+  src: url('./media/fonts/maregraphe/MaregrapheDisplayRegular.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
+
 
 
 //Fonts
-$font-title: 'Garnet', sans-serif;
-$font-other: 'GarnetlightItalic', sans-serif;
-$font-base:  'Archivo Black', monospace;
+// $font-title: 'Garnet', sans-serif;
+$font-other: 'Maregraphe', sans-serif;
+$font-base:  'FormularBlack', sans-serif;
+$font-base-regular: 'FormularRegular', sans-serif;
+$font-base-light: 'FormularLight', sans-serif;
+// $font-base:  'Garnet', sans-serif;
+
 
 
 

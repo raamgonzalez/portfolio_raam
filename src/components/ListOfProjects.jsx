@@ -10,10 +10,8 @@ export default function ListOfProjects () {
 
   return (
     <>
-      <section className='ListOfProjects'>
-        <section className='ListOfProjects-title'>
-          <h4>PROJECTS</h4>
-        </section>
+      <section className='ListOfProjects' id='projects'>
+        <h2 className='ListOfProjects-title'>PROJECTS</h2>
         <section className='ListOfProjects-container'>
           {
   			projects.map((project) => (
