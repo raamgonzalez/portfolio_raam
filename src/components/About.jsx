@@ -1,9 +1,10 @@
+import Titles from './Titles'
+
 export default function About () {
   return (
     <>
       <section className='About' id='about'>
-        <h2 className='About-title'>*ABOUT</h2>
-        <h3 className='About-subtitle'>FRONT END <span>& ARCHITECT</span></h3>
+        <Titles title='ABOUT' subtitle='FRONT END & ARCHITECT' />
         <section className='About-container'>
           <img className='About-img' src='./media/about/portfolio_profile_v2.jpg' />
           <p className='About-p'>

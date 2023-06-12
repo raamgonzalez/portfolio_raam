@@ -1,0 +1,27 @@
+.Arrow{
+	margin: 4rem 0 0 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	&-img{
+		width: 3rem;
+		animation: arrow 1s ease-in-out infinite;
+	}
+
+	arrow{
+		@keyframes arrow{
+			0%{
+				transform: translateY(0);
+			}
+			50%{
+				transform: translateY(0.5rem);
+			}
+			100%{
+				transform: translateY(0);
+			}
+		}
+	}
+	
+}

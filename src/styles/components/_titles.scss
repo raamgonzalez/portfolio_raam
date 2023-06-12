@@ -1,0 +1,9 @@
+.Titles-h2{
+	@include titles()
+}
+.Titles-h3{
+	font-size: $font-size-title;
+	color: $secondary;
+	line-height: 6rem;
+	font-family: $font-base;
+}

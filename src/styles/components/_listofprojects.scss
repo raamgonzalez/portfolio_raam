@@ -15,29 +15,66 @@
 	width: 100%;
 	display: flex;
 	padding: 0 0 1rem 0;
-	border-bottom: 0.5px dotted $base;
   letter-spacing: 0.2rem;
 
 	&-img{
-		width: 33rem;
-		// aspect-ratio: 3/2;
-		// object-fit: contain;
+		width: 59rem;
+		aspect-ratio: 3/2;
+		object-fit: cover;
 	}
-	&-description{
-		margin: 0 0 0 5rem;
+	&-content{
+		padding: 0;
+		margin: 0 0 0 152px;
+		width: 40rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		gap: 2rem;
+		color: $base;
 		
-		font-family: $font-base-light;
-		font-size: $font-size-3;
+		font-family: $font-base-regular;
+
 		line-height: 2.5rem;
+
+		.Project-name{
+			font-size: $font-size-2;
+			font-family: $font-base;
+			line-height: 2.5rem;
+		}
+		.Project-description{
+			font-size: $font-size-3;
+			font-family: $font-other;
+			line-height: 3.5rem;
+			font-weight: 300;
+		}
 	}
 	&-soft{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
+		font-family: $font-other;
+		font-size: $font-size-5;
+	}
+}
+
+.More_Projects{
+	padding: 0 2rem;
+	margin: 160px 0 0 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	place-items: center;
+	// height: 12rem;
+	
+	&-h4{
+		font-size: $font-size-3;
+
+	}
+	&-button{
+		border: none;
+		cursor: pointer;
+		width: 3rem;
+		
 	}
 }

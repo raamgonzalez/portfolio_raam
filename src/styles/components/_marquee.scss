@@ -1,18 +1,18 @@
 .Marquee {
-	height: 25px;
+	height: 30px;
 	width: 100%;
 
 	overflow: hidden;
 	position: relative;
 	background-color: $primary;
-	color: $base ;
+	color: $base;
 	border-bottom: 0.5px dotted $base;
   letter-spacing: 0.2rem;
-
 }
 
 .Marquee div {
-	display: block;
+	display: flex;
+	place-items: center;
 	width: 200%;
 	height: 30px;
 

@@ -1,11 +1,11 @@
 import Logo from './Logo'
-import Scroll from './Scroll'
+import ArrowButton from './ui/ArrowButton'
 
 export default function Home () {
   return (
     <>
       <Logo />
-      <Scroll />
+      <ArrowButton />
     </>
   )
 }

@@ -1,23 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@100;300;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,100&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 
 
 //Imports fonts
-// @font-face {
-//   font-family: 'Mattone';
-//   src: url('./media/fonts/Mattone-150.woff2') format('woff2'), url('./fonts/Mattone-150.woff') format('woff');
-//   font-weight: 300;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: 'Garnet';
-//   src: url('./media/fonts/garnet/Garnett-Black.woff') format('woff');
-//   font-weight: 300;
-//   font-style: normal;
-//   font-display: swap;
-// }
 
 @font-face {
   font-family: 'FormularBlack';
@@ -50,9 +36,10 @@
 
 
 
+
+
 //Fonts
-// $font-title: 'Garnet', sans-serif;
-$font-other: 'Maregraphe', sans-serif;
+$font-other: 'Belleza', sans-serif;
 $font-base:  'FormularBlack', sans-serif;
 $font-base-regular: 'FormularRegular', sans-serif;
 $font-base-light: 'FormularLight', sans-serif;
@@ -66,6 +53,7 @@ $font-base-light: 'FormularLight', sans-serif;
 
 
 //Fonts-size
+$font-size-title: clamp(2.5em, 5vw, 7.5rem);
 $font-size-0: clamp(2.5em, 5vw, 5rem);
 $font-size-1: clamp(2em, 5vw, 3.75rem);
 $font-size-2: clamp(1.8em, 6vw, 3rem);
@@ -77,9 +65,8 @@ $font-size-5: clamp(0.8em, 2vw, 1.125rem);
 
 //Colors
 $title: #F2F2F2;
-$text: #fefefe;
 $base: #F2E5D2;
-$primary: #1C1C1C;
+$primary: #131313;
 $secondary: #EBBB0D;
 $tertiary: #B51414; 
 

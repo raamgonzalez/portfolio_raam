@@ -3,7 +3,9 @@
 import { useContext } from 'react'
 import Project from './Project'
 import { GlobalContext } from '../context/GlobalContext'
-import IconsSoft from './IconsSoft'
+// import IconsSoft from './IconsSoft'
+import Titles from './Titles'
+import MoreProjects from './MoreProjects'
 
 export default function ListOfProjects () {
   const { projects } = useContext(GlobalContext)
@@ -11,7 +13,7 @@ export default function ListOfProjects () {
   return (
     <>
       <section className='ListOfProjects' id='projects'>
-        <h2 className='ListOfProjects-title'>PROJECTS</h2>
+        <Titles title='PROJECTS' subtitle='LIBRARY' />
         <section className='ListOfProjects-container'>
           {
   			projects.map((project) => (
@@ -22,7 +24,8 @@ export default function ListOfProjects () {
   		}
         </section>
       </section>
-      <IconsSoft />
+      {/* <IconsSoft /> */}
+      <MoreProjects />
     </>
   )
 }
