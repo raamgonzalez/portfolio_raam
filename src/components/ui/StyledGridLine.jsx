@@ -1,14 +1,9 @@
 import styled from 'styled-components'
 
 export const StyledGridLine = styled.div`
-  --height: 1px;
-  --width: 5px;
-  --fade-stop: 90%;
-  --offset: -100px;
-
   width: 100%;
   margin: 80px 0 80px 0;
-  height: var(--height);
+  height: 1px;
   left: calc(-100px / 2 * -1);
   
   background: linear-gradient(

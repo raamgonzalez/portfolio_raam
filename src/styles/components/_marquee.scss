@@ -1,3 +1,5 @@
+
+
 .Marquee {
 	height: 30px;
 	width: 100%;
@@ -6,8 +8,9 @@
 	position: relative;
 	background-color: $primary;
 	color: $base;
-	border-bottom: 0.5px dotted $base;
+	// border-bottom: 0.5px dotted $base;
   letter-spacing: 0.2rem;
+
 }
 
 .Marquee div {
@@ -31,9 +34,10 @@
 
 	float: left;
 	width: 50%;
-	font-family: $font-base;
+	font-family: $font-base-regular;
 	font-weight: 700;
 	font-size: 1.2rem;
+
 }
 
 @keyframes marquee {

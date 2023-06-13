@@ -126,25 +126,18 @@ body {
   min-height  : 100vh;
   font-size   : $font-size-5;
   font-family : $font-base;
-  // letter-spacing: 2px;
   line-height: 2rem;
-  // background-image: url('/media/back_01.svg');
   background-color: $primary;
-
-
 
   /* (Opcional) */ line-height:  1.4em;
   // /* (Opcional) */ hyphens: auto;
   /* (Opcional) */ font-smooth: always;
   /* (Opcional) */ -webkit-font-smoothing: antialiased;
   /* (Opcional) */ -moz-osx-font-smoothing: grayscale;
-
-
 }
-
 
 .wrapper{
   padding: 0 9.5rem;
   color: $base;
-
 }
+

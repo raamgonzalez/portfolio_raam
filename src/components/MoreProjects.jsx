@@ -1,9 +1,9 @@
 /* eslint-disable no-tabs */
 /* eslint-disable no-mixed-spaces-and-tabs */
 import { useContext, useState } from 'react'
-import { StyledGridLine } from './ui/GridLine'
+import { StyledGridLine } from './ui/StyledGridLine'
 import { GlobalContext } from '../context/GlobalContext'
-import { LinkedStyled } from './ui/LinksStyled'
+import { StyledLinks } from './ui/StyledLinks'
 
 function Projects () {
   const { projects } = useContext(GlobalContext)
@@ -29,8 +29,8 @@ function Projects () {
     <p>{project.description}</p>
     <img src={project.media} />
     <section className='Projects-project-buttons'>
-      <LinkedStyled href={project.urldeploy} target='_blank' rel='noreferrer'>Demo</LinkedStyled>
-      <LinkedStyled href={project.urlgit} target='_blank' rel='noreferrer'>Github</LinkedStyled>
+      <StyledLinks href={project.urldeploy} target='_blank' rel='noreferrer'>Demo</StyledLinks>
+      <StyledLinks href={project.urlgit} target='_blank' rel='noreferrer'>Github</StyledLinks>
     </section>
   </section>)
 				    : null
