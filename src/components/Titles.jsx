@@ -1,4 +1,4 @@
-import { StyledGridLine } from './ui/GridLine'
+import { StyledGridLine } from './ui/StyledGridLine'
 
 export default function Titles ({ title, subtitle }) {
   return (
