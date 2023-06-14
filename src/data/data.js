@@ -209,61 +209,61 @@ export const data = {
     {
       id: uuidv4(),
       title: 'html',
-      img: '#',
+      img: './media/skills/softs/soft_html.svg',
       state: true
     },
     {
       id: uuidv4(),
       title: 'css',
-      img: '#',
+      img: './media/skills/softs/soft_css.svg ',
       state: true
     },
     {
       id: uuidv4(),
       title: 'javascript',
-      img: '#',
+      img: './media/skills/softs/soft_javascript.svg',
       state: true
     },
     {
       id: uuidv4(),
       title: 'python',
-      img: '#',
+      img: './media/skills/softs/soft_python.svg',
       state: true
     },
     {
       id: uuidv4(),
       title: 'django',
-      img: '#',
+      img: './media/skills/softs/soft_django.svg',
       state: true
     },
     {
       id: uuidv4(),
       title: 'sass',
-      img: '#',
+      img: './media/skills/softs/soft_sass.svg',
       state: true
     },
     {
       id: uuidv4(),
       title: 'reactjs',
-      img: '#',
+      img: './media/skills/softs/soft_react.svg',
       state: true
     },
     {
       id: uuidv4(),
       title: 'cli',
-      img: '#',
+      img: './media/skills/softs/soft_cli.svg',
       state: true
     },
     {
       id: uuidv4(),
       title: 'figma',
-      img: '#',
+      img: './media/skills/softs/soft_figma.svg',
       state: true
     },
     {
       id: uuidv4(),
       title: 'photoshop',
-      img: '#',
+      img: './media/skills/softs/soft_photoshop.svg',
       state: true
     },
     {
