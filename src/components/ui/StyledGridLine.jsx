@@ -14,4 +14,7 @@ export const StyledGridLine = styled.div`
     transparent
   );
   background-size: 5px 1px;
+
+  ${props => props.variant === 'vertical' ? 'transform: rotate(90deg) translateX(10rem) translateY(-15rem) ; width: 20rem;' : null}
+  ${props => props.variant === 'verticalcorrection' ? 'transform: rotate(90deg) translateX(-10rem) translateY(-2rem) ; width: 20rem;' : null}
 `

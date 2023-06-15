@@ -18,7 +18,7 @@
   letter-spacing: 0.2rem;
 
 	&-img{
-		width: 59rem;
+		width: 40rem;
 		aspect-ratio: 3/2;
 		object-fit: cover;
 	}
@@ -155,8 +155,9 @@
 
 	&_project-description{
 		width: 100%;
-		// padding: 0 5rem;
 		display: grid;
+		font-family: $font-base-regular;
+		color: $title;
 		grid-template-columns: repeat(5, 1fr);
 		justify-content: center;
 		gap: 5rem;
