@@ -232,7 +232,7 @@ export const data = {
       description:
         'Time tracking app, front end mentor challenge',
       soft: ['html', 'css', 'react', 'tailwindcss', 'nextjs'],
-      media: '/media/projects/project_timetracking.jpg',
+      media: './media/projects/project_timetracking.jpg',
       urlgit: 'https://github.com/raamgonzalez/timetracking-mentor.git',
       urldeploy:
         'https://timetracking-mentor.vercel.app/',
