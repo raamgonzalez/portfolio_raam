@@ -1,10 +1,12 @@
 import Titles from './Titles'
+import { StyledGridLine } from './ui/StyledGridLine'
 
 export default function About () {
   return (
     <>
       <section className='About' id='about'>
         <Titles title='ABOUT' subtitle='FRONT END & ARCHITECT' />
+        <StyledGridLine />
         <section className='About-container'>
           <img className='About-img' src='./media/about/portfolio_profile_v2.jpg' />
           <p className='About-p'>

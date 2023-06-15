@@ -6,6 +6,12 @@ export default function SkillsSofts () {
   const { softwares } = useContext(GlobalContext)
   const constraintsRef = useRef(null)
 
+  const random = (min, max) => Math.floor(Math.random() * (max - min)) + min
+  const randomX = () => random(0, 40)
+  const randomY = () => random(0, 70)
+  const translateXY = () => random(-50, 50)
+  // console.log(randomX(), randomY())
+
   return (
     <motion.section
       ref={constraintsRef}
@@ -14,7 +20,7 @@ export default function SkillsSofts () {
       {softwares.map(({ id, img, title, state }) => (
         state === true &&
           <div
-            className='Skills-icon' key={id}
+            className='Skills-icons' key={id}
           >
             <div>
               <motion.img
@@ -25,6 +31,7 @@ export default function SkillsSofts () {
                 dragMomentum
                 dragPropagation
                 dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
+                style={{ position: 'absolute', top: `${randomY()}%`, left: `${randomX()}%`, rotate: `${translateXY()}deg` }}
                 className='Skills-img' data-tip={title} src={img} alt={`Icono de software ${title}`}
               />
             </div>

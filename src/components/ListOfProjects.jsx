@@ -6,6 +6,7 @@ import { GlobalContext } from '../context/GlobalContext'
 // import IconsSoft from './IconsSoft'
 import Titles from './Titles'
 import MoreProjects from './MoreProjects'
+import { StyledGridLine } from './ui/StyledGridLine'
 
 export default function ListOfProjects () {
   const { projects } = useContext(GlobalContext)
@@ -14,6 +15,8 @@ export default function ListOfProjects () {
     <>
       <section className='ListOfProjects' id='projects'>
         <Titles title='PROJECTS' subtitle='LIBRARY' />
+        <StyledGridLine />
+        {/** Falta linea grid */}
         <section className='ListOfProjects-container'>
           {
   			projects.map((project) => (

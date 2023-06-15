@@ -15,6 +15,15 @@
 	font-family: $font-base-regular;
 }
 
+@mixin link($align, $padding){
+	font-size: $font-size-4;
+	font-family: $font-other;
+	border: 1px solid $primary;
+	padding: $padding;
+	min-width: 12rem;
+	text-align: $align;
+}
+
 /* Mixins responsive */
 
 @mixin dp( $min : 768px, $max : 1260px ){

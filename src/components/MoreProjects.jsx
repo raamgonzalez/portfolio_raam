@@ -3,7 +3,6 @@
 import { useContext, useState } from 'react'
 import { StyledGridLine } from './ui/StyledGridLine'
 import { GlobalContext } from '../context/GlobalContext'
-import { StyledLinks } from './ui/StyledLinks'
 
 function Projects () {
   const { projects } = useContext(GlobalContext)
@@ -13,6 +12,8 @@ function Projects () {
     return setIsOpen(!isOpen)
   }
 
+  const filterProjects = projects.filter((project) => project.state && !project.important)
+
   return (
     <>
       <div class='Projects'>
@@ -20,17 +21,25 @@ function Projects () {
         <button onClick={handleClickOpen} className={`Projects-button ${isOpen ? 'Projects-button-open' : null}`}><img src='./media/ui/ArrowDown.png' /></button>
       </div>
       <div className={`${isOpen ? 'Projects-container--open' : 'Projects-container--close'}`}>
+        <section className='Projects_project-description'>
+          <p>INDEX</p>
+          <p>PROJECT</p>
+          <p>DESCRIPTION</p>
+          <p>IMAGE</p>
+          <p>LINKS</p>
+        </section>
         {
-				projects.map(project => (
+				filterProjects.map((project, index) => (
 				  project.state && !project.important
 				  ? (
-  <section key={project.id} className='Projects-project'>
+  <section key={project.id} className='Projects_project'>
+    <span className=''>{(index + 1).toString().padStart(2, '0')}</span>
     <h4>{project.name.toUpperCase()}</h4>
     <p>{project.description}</p>
     <img src={project.media} />
-    <section className='Projects-project-buttons'>
-      <StyledLinks href={project.urldeploy} target='_blank' rel='noreferrer'>Demo</StyledLinks>
-      <StyledLinks href={project.urlgit} target='_blank' rel='noreferrer'>Github</StyledLinks>
+    <section className='Projects_project-buttons'>
+      <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>Ver proyecto</a>
+      <a className='Projects_project-link' href={project.urlgit} target='_blank' rel='noreferrer'>Ver código</a>
     </section>
   </section>)
 				    : null

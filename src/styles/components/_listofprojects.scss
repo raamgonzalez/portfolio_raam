@@ -56,19 +56,32 @@
 		font-family: $font-other;
 		font-size: $font-size-5;
 	}
+	&-links{
+		display: flex;
+		gap: 5rem;
+	}
+	&-link{
+		@include link(center, 0.5em 1em);
+
+		&:hover{
+			background-color: $base;
+			color: $primary;
+			transition: all 0.3s ease-in-out;
+		}
+	}	
 }
 
 .More_Projects{
 	width: 100%;
 	padding: 0 2rem;
 	margin: 160px 0 0 0;
-	// height: 12rem;
 }
 
 .Projects{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+
 
 	&-h4{
 		font-size: $font-size-3;
@@ -83,7 +96,6 @@
 	}
 	&-container--close{
 		display: none;
-		
 	}
 
 	&-button{
@@ -92,11 +104,6 @@
 		width: 3rem;
 		transform: rotate(0deg);
 		transition: all 0.5s ease-in-out;
-
-		// &:hover{
-		// 	transform: rotate(180deg);
-		// 	transition: all 0.5s ease-in-out;
-		// }
 	}
 
 	&-button-open{
@@ -104,32 +111,34 @@
 		transition: all 0.5s ease-in-out;
 	}
 
-	&-project{
+	&_project{
 		width: 100%;
 		// padding: 0 5rem;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 		justify-content: center;
 		gap: 5rem;
 
+		span{
+			font-size: $font-size-3;
+			font-family: $font-base-light;
+			align-self: center;
+		}
 
 		h4{
 			display: inline-block;
 			font-size: $font-size-4;
 			font-family: $font-base-light;
 			align-self: center;
-			width: 30rem;
 			
 		}
 		p{
 			font-size: $font-size-4;
 			font-family: $font-other;
 			font-weight: 300;
-			width: 15rem;
 			align-self: center;
 		}
 		img{
-			width: 20rem;
 			cursor: cell;
 			opacity: 0.7;
 			place-self: flex-end;
@@ -144,13 +153,34 @@
 		}
 	}
 
-	&-project-buttons{
+	&_project-description{
+		width: 100%;
+		// padding: 0 5rem;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		justify-content: center;
+		gap: 5rem;
+		margin: 0 0 2rem 0;
+		padding: 0 0 2em 0;
+		border-bottom: 1px dotted #2c2c2c;
+	}
+
+	&_project-buttons{
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		align-items: center;
 		gap: 1rem;
 		align-self: center;
+	}
+
+	&_project-link{
+		@include link(left, 0.5em 0);
+
+		&:hover{
+			background-color: $base;
+			color: $primary;
+			transition: all 0.3s ease-in-out;
+		}
 	}
 }
