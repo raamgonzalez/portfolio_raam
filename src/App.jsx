@@ -5,6 +5,7 @@ import Home from './components/Home'
 import ListOfProjects from './components/ListOfProjects'
 import Marquee from './components/Marquee'
 import Skills from './components/Skills'
+// import Test from './components/Test'
 import GlobalContext from './context/GlobalContext'
 
 function App () {
@@ -15,6 +16,7 @@ function App () {
         <section className='wrapper'>
           <Header />
           <Home />
+          {/* <Test /> */}
           <About />
           <ListOfProjects />
           <Skills />
