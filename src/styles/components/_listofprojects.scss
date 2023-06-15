@@ -18,9 +18,11 @@
 	padding: 0 0 1rem 0;
   letter-spacing: 0.2rem;
 
+
 	&-img{
 		width: 55rem;
 		// aspect-ratio: 3/2;
+		cursor: cell;
 		object-fit: cover;
 		opacity: 0.7;
 		filter: grayscale(100%);
@@ -78,6 +80,10 @@
 			transition: all 0.3s ease-in-out;
 		}
 	}	
+	&-link--disabled{
+		@include link(center, 0.5em 1em);
+		text-decoration: line-through;
+	}
 }
 
 .More_Projects{
@@ -152,11 +158,13 @@
 			opacity: 0.7;
 			place-self: flex-end;
 			align-self: center;
+			filter: grayscale(100%);
 
 			&:hover{
 				z-index: 1;
 				scale: 2;
 				opacity: 1;
+				filter: grayscale(20%);
 				transition: all 0.4s ease-in-out;
 			}
 		}
@@ -166,7 +174,8 @@
 		width: 100%;
 		display: grid;
 		font-family: $font-base-regular;
-		color: $title;
+		color: $base;
+		font-size: $font-size-4;
 		grid-template-columns: repeat(5, 1fr);
 		justify-content: center;
 		gap: 5rem;
@@ -185,7 +194,7 @@
 	}
 
 	&_project-link{
-		@include link(left, 0.5em 0);
+		@include link(left, 0.5em 0 0.5em 1em);
 
 		&:hover{
 			background-color: $base;

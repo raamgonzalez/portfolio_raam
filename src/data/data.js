@@ -43,6 +43,55 @@ export const data = {
   ],
 
   projects: [
+
+    {
+      id: uuidv4(),
+      name: 'mov movies',
+      description:
+        'A website created for performance practice, utilizing hooks such as useCallback and React.memo, as well as API data retrieval. It is a movie search application.',
+      soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
+      media: './media/projects/project_movmovies.jpg',
+      urlgit: 'https://github.com/raamgonzalez/movmovies.git',
+      urldeploy: 'https://movmovies.vercel.app/',
+      state: true,
+      important: false
+    },
+    {
+      id: uuidv4(),
+      name: 'quiz app',
+      description:
+        'A website created as a practice project, utilizing hooks for point summation and featuring a PlayStation 1 aesthetic. The site includes an API query for questions and was developed using React.',
+      soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
+      media: './media/projects/project_quizapp.jpg',
+      urlgit: 'https://github.com/raamgonzalez/quiz-app_react',
+      urldeploy: 'https://quiz-app-react-ebon.vercel.app/',
+      state: true,
+      important: false
+    },
+    {
+      id: uuidv4(),
+      name: 'api cat',
+      description:
+        'A web created as a practice of combining two separate API queries, one for cat images and another for facts. Developed using React and styled with Tailwind CSS for the design.',
+      soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
+      media: './media/projects/project_apicat.jpg',
+      urlgit: 'https://github.com/raamgonzalez/apiCat',
+      urldeploy: 'https://api-cat-eight.vercel.app/',
+      state: true,
+      important: false
+    },
+    {
+      id: uuidv4(),
+      name: 'tente lab',
+      description:
+        'Branding, Rebranding, and Product Photography Agency called Tente Lab. The website is a static page with a form connected to the clients email. I work with a team of UX/UI designers and programmers.',
+      soft: ['html', 'css', 'javascript', 'reactjs', 'sass'],
+      media: './media/projects/project_tentelab.jpg',
+      urlgit: '',
+      urldeploy: 'https://tente-lab.vercel.app/',
+      state: true,
+      important: true
+    },
     {
       id: uuidv4(),
       name: 'tienda de tecnología',
@@ -54,7 +103,7 @@ export const data = {
       urlgit: 'https://github.com/raamgonzalez/Ecommerce-Tecnophil_Gonzalez',
       urldeploy: 'https://ecommerce-react-34850.vercel.app/',
       state: true,
-      important: true
+      important: false
     },
     {
       id: uuidv4(),
@@ -117,22 +166,22 @@ export const data = {
       // "Todolist realizado en Vue con Vite. Trabaja como una app para seguir tareas",
       soft: ['html', 'css', 'javascript', 'vue', 'vite'],
       media: './media/projects/project_todolist.jpg',
-      urlgit: 'https://github.com/raamgonzalez/Todolist_vue',
+      urlgit: 'https://weather-app-react-seven-zeta.vercel.app/',
       urldeploy:
-        'https://raamgonzalez.github.io/Todolist_vue/',
+        'https://github.com/raamgonzalez/weather-app_react.git',
       state: true
     },
     {
       id: uuidv4(),
-      name: 'appclima',
+      name: 'weather app',
       description:
         'Weather application built with Vue and Vite. It has synchronization with a weather API.',
       // "Aplicación del clima realizado en Vue con Vite. Tiene sincronización con API de clima.",
       soft: ['html', 'css', 'javascript', 'vue', 'vite'],
       media: './media/projects/project_appclima.jpg',
-      urlgit: 'https://github.com/raamgonzalez/weather__app-vue',
+      urlgit: 'https://github.com/raamgonzalez/weather-app_react.git',
       urldeploy:
-        'https://raamgonzalez.github.io/weather__app-vue/',
+        'https://weather-app-react-seven-zeta.vercel.app/',
       state: true,
       important: false
     },
@@ -176,19 +225,6 @@ export const data = {
       urldeploy:
         '',
       state: false
-    },
-    {
-      id: uuidv4(),
-      name: 'movmovies',
-      description:
-        'Movie search engine that works with API',
-      soft: ['html', 'css', 'react', 'tailwindcss'],
-      media: './media/projects/project_movmovies.jpg',
-      urlgit: 'https://github.com/raamgonzalez/movmovies.git',
-      urldeploy:
-        'https://movmovies.vercel.app/',
-      state: true,
-      important: false
     },
     {
       id: uuidv4(),

@@ -39,7 +39,7 @@ function Projects () {
     <img src={project.media} />
     <section className='Projects_project-buttons'>
       <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>Ver proyecto</a>
-      <a className='Projects_project-link' href={project.urlgit} target='_blank' rel='noreferrer'>Ver código</a>
+      <a className='Projects_project-link' href={project.urlgit} target='_blank' rel='noreferrer'>{project.urlgit ? 'Ver código' : 'Private'}</a>
     </section>
   </section>)
 				    : null

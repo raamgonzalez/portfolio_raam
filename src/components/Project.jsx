@@ -13,7 +13,7 @@ export default function Project (props) {
           </secction>
           <section className='Project-links'>
             <a className='Project-link' href={urldeploy} target='_blank' rel='noreferrer'>Ver proyecto</a>
-            <a className='Project-link' href={urlgit} target='_blank' rel='noreferrer'>Ver código</a>
+            <a className={urlgit ? 'Project-link' : 'Project-link--disabled'} href={urlgit || null} target='_blank' rel='noreferrer'>{urlgit ? 'Ver código' : 'Private'}</a>
           </section>
         </section>
       </section>
