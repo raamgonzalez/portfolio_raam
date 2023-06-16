@@ -1,0 +1,27 @@
+.Footer{
+	height: 100%;
+	padding: 0 2rem 40px 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&-img{
+		width: 10rem;
+	}
+	&-socials{
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	&-a{
+		font-size: $font-size-3;
+		font-family: $font-other;
+		padding: 0.1em 0.5em;
+
+		&:hover{
+			background-color: $base;
+			color: $primary;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
