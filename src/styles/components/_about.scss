@@ -4,9 +4,10 @@
 
 	&-container{
 		position: relative;
+		padding: 0 40px 0 40px;
 
 		.About-img{
-			width: 46rem;
+			width: 45rem;
 			// filter: grayscale(80%);
 			opacity: 0.7;
 			transition: all 0.3s ease-in-out;
@@ -27,6 +28,7 @@
 			top: 10%;
 			left: 30%;
 			font-size: $font-size-0;
+			font-family: $font-base;
 			line-height: 5rem;
 			margin: 2rem 0 0 0;
 
