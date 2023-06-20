@@ -8,7 +8,7 @@ export default function About () {
         <Titles title='ABOUT' subtitle='FRONT END & ARCHITECT' />
         <StyledGridLine />
         <section className='About-container'>
-          <img className='About-img' src='./media/about/portfolio_profile_v2.jpg' />
+          <img className='About-img' src='./media/about/profile_picture_v2.jpg' />
           <p className='About-p'>
             HI THERE! MY NAME IS RAMSÉS BUT SOME PEOPLE CALL ME RAAM.
             I'M AN ARCHITECT WITH A PASSION FOR PROGRAMMING.
