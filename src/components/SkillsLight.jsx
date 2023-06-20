@@ -4,7 +4,7 @@ import { StyledGridLine } from './ui/StyledGridLine'
 export default function SkillsLight () {
   return (
     <>
-      <Titles title='*SOFTSKILLS' subtitle={null} />
+      <Titles title='SOFTSKILLS' subtitle={null} />
       <section className='Light'>
         <div className='Light-01'>
           <StyledGridLine variant='vertical' />

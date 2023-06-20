@@ -48,7 +48,7 @@ export const data = {
       id: uuidv4(),
       name: 'mov movies',
       description:
-        'A website created for performance practice, utilizing hooks such as useCallback and React.memo, as well as API data retrieval. It is a movie search application.',
+        'A website created for performance practice. It is a movie search application.',
       soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
       media: '/media/projects/project_movmovies.webp',
       urlgit: 'https://github.com/raamgonzalez/movmovies.git',
@@ -60,7 +60,7 @@ export const data = {
       id: uuidv4(),
       name: 'quiz app',
       description:
-        'A website created as a practice project, utilizing hooks for point summation and featuring a PlayStation 1 aesthetic. The site includes an API query for questions and was developed using React.',
+        'A website created as a practice project, the site includes an API query for questions and was developed using React.',
       soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
       media: '/media/projects/project_quizapp.webp',
       urlgit: 'https://github.com/raamgonzalez/quiz-app_react',
@@ -72,7 +72,7 @@ export const data = {
       id: uuidv4(),
       name: 'api cat',
       description:
-        'A web created as a practice of combining two separate API queries, one for cat images and another for facts. Developed using React and styled with Tailwind CSS for the design.',
+        'A web created as a practice of combining two separate API queries, developed using React',
       soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
       media: '/media/projects/project_apicat.webp',
       urlgit: 'https://github.com/raamgonzalez/apiCat',

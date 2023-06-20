@@ -6,7 +6,7 @@ import Home from './components/Home'
 import ListOfProjects from './components/ListOfProjects'
 import Marquee from './components/Marquee'
 import Skills from './components/Skills'
-import ToolTip from './components/ui/ToolTip'
+// import ToolTip from './components/ui/ToolTip'
 import GlobalContext from './context/GlobalContext'
 
 function App () {
@@ -17,7 +17,7 @@ function App () {
         <section className='wrapper'>
           <Header />
           <Home />
-          <ToolTip />
+          {/* <ToolTip /> */}
           <About />
           <ListOfProjects />
           <Skills />
