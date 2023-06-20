@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledGridLine = styled.div`
   width: 100%;
-  margin: 80px 0 80px 0;
+  margin: 80px 0 160px 0;
   height: 2px;
   left: calc(-100px / 2 * -1);
   
