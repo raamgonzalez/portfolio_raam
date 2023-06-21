@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @media screen and (min-width: 800px) {
-  .wrapper::before {
+  body::before {
       content: "";
       z-index: 9999;
       position: absolute;

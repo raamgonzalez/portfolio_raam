@@ -124,6 +124,7 @@ svg{
 
 /* Configuramos la tipografía para toda la web */
 body {
+  position: relative;
   min-height  : 100vh;
   font-size   : $font-size-5;
   font-family : $font-base;
