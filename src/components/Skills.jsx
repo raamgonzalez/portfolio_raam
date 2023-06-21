@@ -7,7 +7,8 @@ import { StyledGridLine } from './ui/StyledGridLine'
 export default function Skills () {
   return (
     <>
-      <section className='Skills' id='skills'>
+      <div id='skills' />
+      <section className='Skills'>
         <Titles title='SKILLS' subtitle='SOFT & SOFT' />
         <StyledGridLine />
       </section>

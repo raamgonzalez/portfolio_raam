@@ -4,7 +4,8 @@ import { StyledGridLine } from './ui/StyledGridLine'
 export default function About () {
   return (
     <>
-      <section className='About' id='about'>
+      <div id='about' />
+      <section className='About'>
         <Titles title='ABOUT' subtitle='FRONT END & ARCHITECT' />
         <StyledGridLine />
         <section className='About-container'>
