@@ -3,10 +3,25 @@
 import { useContext, useState } from 'react'
 import { StyledGridLine } from './ui/StyledGridLine'
 import { GlobalContext } from '../context/GlobalContext'
+import { motion } from 'framer-motion'
 
 function Projects () {
   const { projects } = useContext(GlobalContext)
   const [isOpen, setIsOpen] = useState(false)
+
+  const scrollingProjects = {
+    hidden: {
+      y: -100
+    },
+    visible: {
+      y: 0,
+      x: 0,
+      transition: {
+        type: 'bounce',
+        duration: 0.3
+      }
+    }
+  }
 
   const handleClickOpen = () => {
     return setIsOpen(!isOpen)
@@ -32,7 +47,12 @@ function Projects () {
 				filterProjects.map((project, index) => (
 				  project.state && !project.important
 				  ? (
-  <section key={project.id} className='Projects_project'>
+  <motion.section
+    variants={scrollingProjects}
+    initial='hidden'
+    whileInView='visible'
+    key={project.id} className='Projects_project'
+  >
     <span className=''>{(index + 1).toString().padStart(2, '0')}</span>
     <h4>{project.name.toUpperCase()}</h4>
     <p>{project.description}</p>
@@ -41,7 +61,7 @@ function Projects () {
       <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>Ver proyecto</a>
       <a className='Projects_project-link' href={project.urlgit} target='_blank' rel='noreferrer'>{project.urlgit ? 'Ver código' : 'Private'}</a>
     </section>
-  </section>)
+  </motion.section>)
 				    : null
 				))
 		}
