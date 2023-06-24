@@ -1,7 +1,27 @@
 import Titles from './Titles'
 import { StyledGridLine } from './ui/StyledGridLine'
+import { gsap } from 'gsap'
+import SplitType from 'split-type'
 
 export default function About () {
+  // const ourText = new SplitType('p.About-p', { types: 'chars' })
+  // const chars = ourText.chars
+
+  // gsap.fromTo(
+  //   chars,
+  //   {
+  //     y: 100,
+  //     opacity: 0
+  //   },
+  //   {
+  //     y: 0,
+  //     opacity: 1,
+  //     stagger: 0.05,
+  //     duration: 0.5,
+  //     ease: 'power4.out'
+  //   }
+  // )
+
   return (
     <>
       <div id='about' />
