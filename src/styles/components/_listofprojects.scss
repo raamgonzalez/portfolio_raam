@@ -1,5 +1,5 @@
 .ListOfProjects{
-	margin: 45rem 0 0 0;
+	margin: 65rem 0 0 0;
 
 	&-title{
 		@include titles()
@@ -27,7 +27,7 @@
 		object-fit: cover;
 		opacity: 0.7;
 		filter: grayscale(100%);
-		border: solid 10px black;
+		border: solid 10px black;	
 
 		&:hover{
 			opacity: 1;
@@ -47,7 +47,7 @@
 		
 		font-family: $font-base-regular;
 
-		line-height: 2.5rem;
+		line-height: 40px;
 
 		.Project-name{
 			font-size: $font-size-2;
@@ -57,7 +57,7 @@
 		.Project-description{
 			font-size: $font-size-3;
 			font-family: $font-other;
-			line-height: 3.5rem;
+			line-height: 40px;
 			font-weight: 300;
 		}
 	}
