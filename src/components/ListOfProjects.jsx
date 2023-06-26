@@ -10,11 +10,11 @@ import { useTranslation } from 'react-i18next'
 
 export default function ListOfProjects () {
   const { projects } = useContext(GlobalContext)
-  const [t] = useTranslation('global')
+  const [t, i18n] = useTranslation('global')
 
   return (
     <>
-      <section className='ListOfProjects' id='projects'>
+      <section className={i18n.language === 'en' ? 'ListOfProjects' : 'ListOfProjects--margin'} id='projects'>
         <Titles title={t('projects.title')} subtitle={t('projects.subtitle')} />
         <StyledGridLine />
         {/** Falta linea grid */}

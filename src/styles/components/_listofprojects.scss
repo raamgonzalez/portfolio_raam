@@ -1,5 +1,5 @@
 .ListOfProjects{
-	margin: 65rem 0 0 0;
+	margin: 70rem 0 0 0;
 
 	&-title{
 		@include titles()
@@ -9,6 +9,10 @@
 		flex-direction: column;
 		gap: 10rem;
 	}
+}
+
+.ListOfProjects--margin{
+	margin: 95rem 0 0 0;
 }
 
 .Project{

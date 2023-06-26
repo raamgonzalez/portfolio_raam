@@ -63,8 +63,8 @@ function Projects () {
     <p>{i18n.language === 'en' ? project.descriptionEN : project.descriptionES}</p>
     <img src={project.media} />
     <section className='Projects_project-buttons'>
-      <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>Ver proyecto</a>
-      <a className='Projects_project-link' href={project.urlgit} target='_blank' rel='noreferrer'>{project.urlgit ? 'Ver código' : 'Private'}</a>
+      <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View Project' : 'Ver Proyecto'}</a>
+      <a className='Projects_project-link' href={project.urlgit} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View code' : 'Ver Código'}</a>
     </section>
   </motion.section>)
 				    : null
