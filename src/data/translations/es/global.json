@@ -1,0 +1,38 @@
+{
+	"navbar": {
+		"about": "ACERCA",
+		"projects": "PROYECTOS",
+		"skills": "HABILIDADES",
+		"resume": "CURRÍCULUM"
+	},
+	"about":{
+		"title": "ACERCA",
+		"subtitle": "FRONT END & ARQUITECTO",
+		"description": {
+			"p01": "¡HOLA! MI NOMBRE ES RAMSÉS PERO ALGUNAS PERSONAS ME LLAMAN RAAM. ARQUITECTO APASIONADO POR LA PROGRAMACIÓN. ESTOY EMOCIONADO DE COMENZAR MI CARRERA EN ESTE CAMPO. A TRAVÉS DE MI ",
+			"p02": "A TRAVÉS DE MI EXPERIENCIA EN ARQUITECTURA.",
+			"p03": " HE ADQUIRIDO HABILIDADES EN",
+			"p04": " DISEÑO, PLANIFICACIÓN Y RESOLUCIÓN DE PROBLEMAS COMPLEJOS."
+		}	
+	},
+	"projects":{
+		"title": "PROYECTOS",
+		"subtitle": "LIBRERÍA",
+		"moreprojects": "MÁS PROYECTOS",
+		"description": {
+			"index": "ÍNDICE",
+			"project": "PROYECTO",
+			"description": "DESCRIPCIÓN",
+			"image": "IMAGEN"
+		}
+	},
+	"skills" : {
+		"title": "HABILIDADES",
+		"subtitle": "SOFT & SOFT"
+	},
+	"softskills" : {
+		"phrase01" : "Comunicación efectiva, colaboré en coordinación de proyectos",
+		"phrase02" : "Trabajo en equipo, colaboré en coordinación de proyectos",
+		"phrase03" : "Resolución de problemas, participe en mesas participativas en los barrios"
+	}
+}

@@ -1,11 +1,6 @@
 import Titles from './Titles'
-import { animate, motion } from 'framer-motion'
-
-const softskills = [
-  'Comunicación efectiva, colaboré en coordinación de proyectos',
-  'Trabajo en equipo, trabaje en equipos de diseño y proyecto unificados',
-  'Resolución de problemas, participe en mesas participativas en los barrios'
-]
+import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const container = {
   hidden: { opacity: 1, x: -200 },
@@ -30,6 +25,14 @@ const item = {
 }
 
 export default function SkillsLight () {
+  const [t] = useTranslation('global')
+
+  const softskills = [
+  `${t('softskills.phrase01')}`,
+  `${t('softskills.phrase02')}`,
+  `${t('softskills.phrase03')}`
+  ]
+
   return (
     <>
       <Titles title='SOFTSKILLS' subtitle={null} />

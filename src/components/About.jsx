@@ -1,9 +1,13 @@
+
 import Titles from './Titles'
 import { StyledGridLine } from './ui/StyledGridLine'
+import { useTranslation } from 'react-i18next'
+
 // import { gsap } from 'gsap'
 // import SplitType from 'split-type'
 
 export default function About () {
+  const [t] = useTranslation('global')
   // const ourText = new SplitType('p.About-p', { types: 'chars' })
   // const chars = ourText.chars
 
@@ -26,17 +30,15 @@ export default function About () {
     <>
       <div id='about' />
       <section className='About'>
-        <Titles title='ABOUT' subtitle='FRONT END & ARCHITECT' />
+        <Titles title={t('about.title')} subtitle={t('about.subtitle')} />
         <StyledGridLine />
         <section className='About-container'>
           <img className='About-img' src='./media/about/profile_picture_v2.jpg' />
           <p className='About-p'>
-            HI THERE! MY NAME IS RAMSÉS BUT SOME PEOPLE CALL ME RAAM.
-            I'M AN ARCHITECT WITH A PASSION FOR PROGRAMMING.
-            I'M EXCITED TO START MY CAREER IN THIS FIELD.
-            THROUGH <span>MY EXPERIENCE</span> IN <span>ARCHITECTURE</span>,
-            I HAVE ACQUIRED SKILLS IN <span>DESIGN</span>, <span>PLANNING</span>,
-            AND <span>SOLVING COMPLEX PROBLEMS</span>
+            {t('about.description.p01')}
+            <span>{t('about.description.p02')}</span>
+            {t('about.description.p03')}
+            <span>{t('about.description.p04')}</span>
           </p>
         </section>
       </section>

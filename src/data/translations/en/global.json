@@ -1,26 +1,39 @@
 {
 	"navbar": {
-		"about": "ABOUT",
+		"about": "ABOUT ME",
 		"projects": "PROJECTS",
-		"contact": "SKILLS",
+		"skills": "SKILLS",
 		"resume": "RESUME"
 	},
 	"about":{
 		"title": "ABOUT",
 		"subtitle": "FRONT END & ARCHITECT",
 		"description": {
-			"p01": "HI THERE! MY NAME IS RAMSÉS BUT SOME PEOPLE CALL ME RAAM. I'M AN ARCHITECT WITH A p FOR PROGRAMMING. I'M EXCITED TO START MY CAREER IN THIS FIELD.THROUGH",
-			"p02": "MY EXPERIENCE",
-			"p03": "IN" ,
-			"p04": "ARCHITECTURE",
-			"p05": "I HAVE ACQUIRED SKILLS IN",
-			"p06": "DESIGN, PLANNING",
-			"p07": "AND",
-			"p08": "SOLVING COMPLEX PROBLEMS"	
+			"p01": "HI THERE! MY NAME IS RAMSÉS BUT SOME PEOPLE CALL ME RAAM. I'M AN ARCHITECT WITH A FOR PROGRAMMING. I'M EXCITED TO START MY CAREER IN THIS FIELD.",
+			"p02": " THROUGH MY EXPERIENCE IN ARCHITECTURE",
+			"p03": " I HAVE ACQUIRED SKILLS IN",
+			"p04": " DESIGN, PLANNING AND SOLVING COMPLEX PROBLEMS"
 		}	
 	},
 	"projects":{
 		"title": "PROJECTS",
-		"subtitle": "LIBRARY"
+		"subtitle": "LIBRARY",
+		"moreprojects": "MORE PROJECTS",
+		"description": {
+			"index": "INDEX",
+			"project": "PROJECT",
+			"description": "DESCRIPTION",
+			"image": "IMAGE"
+		}
+	},	
+	"skills":{
+		"title": "SKILLS",
+		"subtitle": "SOFT & SOFT"
+	},
+	"softskills" : {
+		"phrase01" : "Effective communication, collaborated in project coordination",
+		"phrase02" : "Teamwork, collaborated in project coordination",
+		"phrase03" : "Problem solving, participate in participatory tables in the neighborhoods"
 	}
+
 }

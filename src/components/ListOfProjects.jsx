@@ -3,18 +3,19 @@
 import { useContext } from 'react'
 import Project from './Project'
 import { GlobalContext } from '../context/GlobalContext'
-// import IconsSoft from './IconsSoft'
 import Titles from './Titles'
 import MoreProjects from './MoreProjects'
 import { StyledGridLine } from './ui/StyledGridLine'
+import { useTranslation } from 'react-i18next'
 
 export default function ListOfProjects () {
   const { projects } = useContext(GlobalContext)
+  const [t] = useTranslation('global')
 
   return (
     <>
       <section className='ListOfProjects' id='projects'>
-        <Titles title='PROJECTS' subtitle='LIBRARY' />
+        <Titles title={t('projects.title')} subtitle={t('projects.subtitle')} />
         <StyledGridLine />
         {/** Falta linea grid */}
         <section className='ListOfProjects-container'>

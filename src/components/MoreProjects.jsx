@@ -5,10 +5,12 @@ import { StyledGridLine } from './ui/StyledGridLine'
 import { GlobalContext } from '../context/GlobalContext'
 import { motion } from 'framer-motion'
 import ArrowButton from './ui/ArrowButton'
+import { useTranslation } from 'react-i18next'
 
 function Projects () {
   const { projects } = useContext(GlobalContext)
   const [isOpen, setIsOpen] = useState(false)
+  const [t, i18n] = useTranslation('global')
 
   const scrollingProjects = {
     hidden: {
@@ -35,15 +37,15 @@ function Projects () {
   return (
     <>
       <div class='Projects'>
-        <h4 className='Projects-h4'>MORE PROJECTS</h4>
+        <h4 className='Projects-h4'>{t('projects.moreprojects')}</h4>
         <button onClick={handleClickOpen} className={`Projects-button ${isOpen ? 'Projects-button-open' : null}`}><ArrowButton /></button>
       </div>
       <div className={`${isOpen ? 'Projects-container--open' : 'Projects-container--close'}`}>
         <section className='Projects_project-description'>
-          <p>INDEX</p>
-          <p>PROJECT</p>
-          <p>DESCRIPTION</p>
-          <p>IMAGE</p>
+          <p>{t('projects.description.index')}</p>
+          <p>{t('projects.description.project')}</p>
+          <p>{t('projects.description.description')}</p>
+          <p>{t('projects.description.image')}</p>
           <p>LINKS</p>
         </section>
         {
@@ -58,7 +60,7 @@ function Projects () {
   >
     <span className=''>{(index + 1).toString().padStart(2, '0')}</span>
     <h4>{project.name.toUpperCase()}</h4>
-    <p>{project.description}</p>
+    <p>{i18n.language === 'en' ? project.descriptionEN : project.descriptionES}</p>
     <img src={project.media} />
     <section className='Projects_project-buttons'>
       <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>Ver proyecto</a>

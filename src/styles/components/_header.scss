@@ -75,6 +75,38 @@
 	}
 }
 
+.Button_Language{
+	position: fixed;
+	left: 7%;
+	top: 5%;
+	z-index: 1;
+	display: flex;
+	gap: 0.3rem;
+
+
+	padding: 1rem 2rem;
+	background: rgba(28, 28, 28, 0.22);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.164);
+	border: 1px solid rgba(28, 28, 28, 0.3);
+
+	span{
+		color: $base;
+		font-size: $font-size-5;
+		opacity: 0.5;
+	}
+
+	&-button{
+		color: $base;
+		font-size: $font-size-5;
+		opacity: 0.5;
+
+		&:hover{
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
 
 
 

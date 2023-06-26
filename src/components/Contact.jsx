@@ -4,7 +4,6 @@ import { GlobalContext } from '../context/GlobalContext'
 
 export default function Contact () {
   const { rrss } = useContext(GlobalContext)
-  console.log(rrss)
   return (
     <div className='Contact'>
       {/* <p className='Contact-p'>CONTACT ME</p>

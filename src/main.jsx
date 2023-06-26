@@ -4,11 +4,21 @@ import App from './App.jsx'
 import './styles/styles.scss'
 import { I18nextProvider } from 'react-i18next'
 import i18next from 'i18next'
-import global_es from './data/translations/es/global.json'
-import global_en from './data/translations/en/global.json'
+import globalEs from './data/translations/es/global.json'
+import globalEn from './data/translations/en/global.json'
 
 i18next.init({
-  interpolation: { escapeValue: false }
+  interpolation: { escapeValue: false },
+  lng: 'en',
+  resources: {
+    es: {
+      global: globalEs
+    },
+    en: {
+      global: globalEn
+    }
+  }
+
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
