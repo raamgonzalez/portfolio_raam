@@ -25,20 +25,26 @@
 
 /* Mixins responsive */
 
-@mixin dp( $min : 768px, $max : 1260px ){
+@mixin mob( $min : 240px, $max : 480px ){
 	@media (min-width: $min) and (max-width: $max) {
 			@content; 
 	}
 }
 
-@mixin mb( $min : 240px, $max : 768px ){
+@mixin tab( $min : 480px, $max : 768px ){
 	@media (min-width: $min) and (max-width: $max) {
 			@content; 
 	}
 }
 
-@mixin gl( $min : 240px, $max : 1260px ){
+@mixin des( $min : 768px, $max : 1260px ){
 	@media (min-width: $min) and (max-width: $max) {
+			@content; 
+	}
+}
+
+@mixin gl( $min : 1260px, $max : 1630px ){
+	@media (max-width: $min) {
 			@content; 
 	}
 }

@@ -1,4 +1,6 @@
 @import './settings';
+@import './mixins';
+
 
 
 // /* Definimos las Custom properties */
@@ -142,8 +144,14 @@ body {
 .wrapper{
   padding: 0 10rem;
   position: relative;
+  width: 100%;
   height: 100%;
   color: $base;
+
+  @include des(){
+    padding: 0 5rem;
+  }
+
 }
 
 
