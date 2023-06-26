@@ -1,0 +1,26 @@
+{
+	"navbar": {
+		"about": "ABOUT",
+		"projects": "PROJECTS",
+		"contact": "SKILLS",
+		"resume": "RESUME"
+	},
+	"about":{
+		"title": "ABOUT",
+		"subtitle": "FRONT END & ARCHITECT",
+		"description": {
+			"p01": "HI THERE! MY NAME IS RAMSÉS BUT SOME PEOPLE CALL ME RAAM. I'M AN ARCHITECT WITH A p FOR PROGRAMMING. I'M EXCITED TO START MY CAREER IN THIS FIELD.THROUGH",
+			"p02": "MY EXPERIENCE",
+			"p03": "IN" ,
+			"p04": "ARCHITECTURE",
+			"p05": "I HAVE ACQUIRED SKILLS IN",
+			"p06": "DESIGN, PLANNING",
+			"p07": "AND",
+			"p08": "SOLVING COMPLEX PROBLEMS"	
+		}	
+	},
+	"projects":{
+		"title": "PROJECTS",
+		"subtitle": "LIBRARY"
+	}
+}

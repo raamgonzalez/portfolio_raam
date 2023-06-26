@@ -47,6 +47,20 @@ export const data = {
     {
       id: uuidv4(),
       name: 'mov movies',
+      description_en:
+        'A website created for performance practice. It is a movie search application.',
+      description_es:
+        'Una web creada para practicar el rendimiento. Es una aplicación de búsqueda de películas.',
+      soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
+      media: '/media/projects/project_movmovies.jpg',
+      urlgit: 'https://github.com/raamgonzalez/movmovies.git',
+      urldeploy: 'https://movmovies.vercel.app/',
+      state: true,
+      important: false
+    },
+    {
+      id: uuidv4(),
+      name: 'mov movies',
       description:
         'A website created for performance practice. It is a movie search application.',
       soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
