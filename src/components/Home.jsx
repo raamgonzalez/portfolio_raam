@@ -5,9 +5,9 @@ export default function Home () {
   return (
     <>
       <Logo />
-      <div className='mt-20'>
+      {/* <div className='mt-20'>
         <ArrowButton />
-      </div>
+      </div> */}
     </>
   )
 }
