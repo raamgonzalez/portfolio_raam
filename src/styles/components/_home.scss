@@ -5,13 +5,16 @@
 .Logo{
 	width: 100%;
 	padding: 4.8rem 0 0 0;
-	// height: 54rem;
+	height: 54rem;
 	margin: 0 0 0 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	
+	@include mob(){
+		height: none;
+	}
 
 	&-img{
 		width: 64rem;
