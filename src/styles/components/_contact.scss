@@ -15,9 +15,9 @@
 
 	&-links{
 		display: flex;
-		width: 70rem;
+		width: 100%;
 		// rotate: -4deg;
-		gap: 10rem;
+		gap: 5rem;
 		justify-content: center;
 		color: $base;
 		border-radius: 10px;
@@ -36,21 +36,23 @@
 		@include tab(){
 			width: 100%;
 			flex-direction: column;
-			gap: 5rem;
+			gap: 3rem;
 		}
 		@include mob(){
 			width: 100%;
 			flex-direction: column;
-			gap: 5rem;
+			gap: 2rem;
 		}
 	}
 	&-a{
 		@include link(center, 0.5em 1em);
 		font-size: $font-size-0;
 		align-self: center;
-		border: none;
-		padding: 1rem 5rem;
+		// padding: 1rem 3rem;
 		font-style: italic;
+		border-radius: 10px;
+		width: 100%;
+		// border: 1px solid #f2e5d23d;
 
 		&:hover{
 			background-color: $base;
