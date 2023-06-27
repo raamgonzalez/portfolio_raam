@@ -13,7 +13,7 @@
 	align-items: center;
 	
 	@include mob(){
-		height: none;
+		height: auto;
 	}
 
 	&-img{
