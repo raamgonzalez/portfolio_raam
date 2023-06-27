@@ -10,9 +10,11 @@
 .NavBar{
 	position: fixed;
 	inset: 0;
+	// right: 7%;
 	top: 5%;
 	width: fit-content;
 	height: fit-content;
+	z-index: 1;
 
 
 	display: flex;
@@ -29,6 +31,11 @@
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	// border: 1px solid rgba(28, 28, 28, 0.3);
+
+	@include tab(){
+		inset: 0;
+		top: 93%;
+	}
 
 	&-a{
 		color: $base;
@@ -49,7 +56,7 @@
 	place-items: flex-end;
 	right: 7%;
 	top: 5%;
-	z-index: 1;
+	z-index: 0;
 
 	padding: 1rem 2rem;
 	background: rgba(28, 28, 28, 0.22);
@@ -68,6 +75,13 @@
 		}
 	}
 
+	@include des(){
+		right: 7%;
+	}
+	@include middle(){
+		right: 5%;
+	}
+
 	&::before{
 		content: '';
 		position: absolute;
@@ -79,6 +93,10 @@
 		background: rgba(28, 28, 28, 0.22);
 		box-shadow: 0 4px 20px rgba(233, 11, 11, 0.884);
 		filter: blur(50px);
+
+		@include des(){
+			display: blur(5px);
+		}
 	}
 }
 

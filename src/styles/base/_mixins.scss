@@ -19,7 +19,7 @@
 	font-family: $font-other;
 	border: 1px solid $primary;
 	padding: $padding;
-	min-width: 12rem;
+	// min-width: 12rem;
 	text-align: $align;
 }
 
@@ -37,7 +37,13 @@
 	}
 }
 
-@mixin des( $min : 768px, $max : 1260px ){
+@mixin middle( $min : 768px, $max : 1000px ){
+	@media (min-width: $min) and (max-width: $max) {
+			@content; 
+	}
+}
+
+@mixin des( $min : 1000px, $max : 1260px ){
 	@media (min-width: $min) and (max-width: $max) {
 			@content; 
 	}

@@ -5,6 +5,10 @@
 	align-items: center;
 	justify-content: space-between;
 
+	@include tab(){
+		padding: 0 2rem 85px 2rem;
+	}
+
 	&-img{
 		width: 10rem;
 	}

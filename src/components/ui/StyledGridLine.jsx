@@ -17,4 +17,9 @@ export const StyledGridLine = styled.div`
 
   ${props => props.variant === 'vertical' ? 'transform: rotate(90deg) translateX(10rem) translateY(-15rem) ; width: 20rem;' : null}
   ${props => props.variant === 'verticalcorrection' ? 'transform: rotate(90deg) translateX(-10rem) translateY(-2rem) ; width: 20rem;' : null}
+
+  @media (480px <= width <= 768px) {
+    margin: 40px 0 40px 0;
+  }
+
 `

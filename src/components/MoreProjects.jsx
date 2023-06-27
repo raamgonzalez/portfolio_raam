@@ -44,9 +44,9 @@ function Projects () {
         <section className='Projects_project-description'>
           <p>{t('projects.description.index')}</p>
           <p>{t('projects.description.project')}</p>
-          <p>{t('projects.description.description')}</p>
-          <p className='Projects_project-description--display'>{t('projects.description.image')}</p>
-          <p>LINKS</p>
+          <p className='Projects_project-description--displaydescrip'>{t('projects.description.description')}</p>
+          <p className='Projects_project-description--displayimage'>{t('projects.description.image')}</p>
+          <p className='Projects_project-description--displaylinks'>LINKS</p>
         </section>
         {
 				filterProjects.map((project, index) => (

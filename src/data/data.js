@@ -203,7 +203,7 @@ export const data = {
     },
     {
       id: uuidv4(),
-      name: 'writeperminute',
+      name: 'write per minute',
       descriptionEN:
         'Application for practicing writing.',
       descriptionES:
@@ -247,7 +247,7 @@ export const data = {
     },
     {
       id: uuidv4(),
-      name: 'timetracking',
+      name: 'time tracking',
       descriptionEN:
         'Time tracking app, front end mentor challenge.',
       descriptionES:

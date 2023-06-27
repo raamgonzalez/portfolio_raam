@@ -13,6 +13,14 @@
 	@include gl(){
 		margin: 50rem 0 0 0;
 	}
+
+	@include middle(){
+		margin: 40rem 0 0 0;
+	}
+
+	@include tab(){
+		margin: 43rem 0 0 0;
+	}
 }
 
 .ListOfProjects--margin{
@@ -20,6 +28,12 @@
 
 	@include gl(){
 		margin: 70rem 0 0 0;
+	}
+	@include middle(){
+		margin: 55rem 0 0 0;
+	}
+	@include tab(){
+		margin: 50rem 0 0 0;
 	}
 }
 
@@ -35,11 +49,21 @@
 	@include gl(){
 		padding: 20px 0.5rem 20px;
 	}
-
 	@include des(){
 		padding: 20px 0.3rem 20px;
 	}
-	
+	@include middle(){
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+	@include tab(){
+		padding: 10px 0.3rem 10px;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
 
 
 	&-img{
@@ -65,8 +89,7 @@
 			place-items: center;
 		}
 		@include des(){
-			width: 30rem;
-			height: auto;
+			width: 20rem;
 			align-self: center;
 		}
 	}
@@ -86,10 +109,18 @@
 		@include gl(){
 			margin: 0 0 0 160px ;
 		}
-
 		@include des(){
 			margin: 2rem 0 0 80px;
 		}
+		@include middle(){
+			margin: 0;
+			width: 100%;
+		}
+		@include tab(){
+			margin: 0;
+			width: 100%;
+		}
+
 
 		.Project-name{
 			font-size: $font-size-2;
@@ -119,6 +150,9 @@
 		@include des(){
 			gap: 2rem;
 		}
+		@include tab(){
+			gap: 1rem
+		}
 	}
 	&-link{
 		@include link(center, 0.5em 1em);
@@ -142,6 +176,10 @@
 	width: 100%;
 	padding: 0 40px;
 	margin: 160px 0 0 0;
+
+	@include tab(){
+		padding: 0;
+	}
 }
 
 .Projects{
@@ -190,19 +228,42 @@
 			display: grid;
 			grid-template-columns: 0.25fr 0.5fr 1fr 0.25fr;
 		}
+		@include middle(){
+			display: grid;
+			grid-template-columns: 0.25fr 1fr 1fr 1fr;
+			gap: 2rem;
+		}
+		@include tab(){
+			grid-template-columns: 0.25fr 1fr 1fr;
+			gap: 2rem;
+		}
+
 
 		span{
 			font-size: $font-size-3;
 			font-family: $font-base-light;
 			align-self: center;
+
+			@include tab(){
+				width: fit-content;
+				display: inline-block;
+			}
 		}
 
 		h4{
-			display: inline-block;
+			display: block;
 			font-size: $font-size-3;
 			font-family: $font-base-light;
 			align-self: center;
 			line-height: 2rem;
+
+			@include middle(){
+				font-size: $font-size-4;
+				width: 100%;
+			}
+			// @include tab(){
+			// 	width: fit-content;
+			// }
 			
 		}
 		p{
@@ -211,6 +272,13 @@
 			line-height: 2rem;
 			font-weight: 300;
 			align-self: center;
+
+			@include middle(){
+				font-size: $font-size-4;
+			}
+			@include tab(){
+				display: none;
+			}
 		}
 
 		img{
@@ -234,6 +302,12 @@
 			@include des(){
 				display: none;
 			}
+			@include middle(){
+				display: none;
+			}
+			@include tab(){
+				display: none;
+			}
 		}
 	}
 
@@ -245,15 +319,43 @@
 		font-size: $font-size-4;
 		grid-template-columns: 0.25fr 0.5fr 1fr 0.5fr 0.5fr;
 		justify-content: center;
-		gap: 5rem;
+		gap: 4rem;
 		margin: 0 0 2rem 0;
 		padding: 0 0 2em 0;
 		border-bottom: 1px dotted #2c2c2c;
 
 		@include des(){
 			grid-template-columns: 0.25fr 0.5fr 1fr 0.5fr;
-			&--display{
+			&--displayimage{
 				display: none;
+			}
+		}
+
+		@include middle(){
+			grid-template-columns: 0.25fr 0.5fr 1fr 0.5fr;
+			gap: 1rem;
+			&--displaydescrip{
+				margin: 0 0 0 3rem;
+			}
+			&--displayimage{
+				display: none;
+			}
+			&--displaylinks{
+				margin: 0 0 0 -3.5rem;
+			}
+		}
+
+		@include tab(){
+			grid-template-columns: 0.25 1fr 1fr;
+			padding: 0 0 1em 0;
+			&--displaydescrip{
+				display: none;
+			}
+			&--displayimage{
+				display: none;
+			}
+			&--displaylinks{
+				margin: 0 0 0 1rem;
 			}
 		}
 	}
@@ -265,6 +367,10 @@
 		justify-content: flex-start;
 		gap: 1rem;
 		align-self: center;
+
+		@include tab(){
+			gap: 0.5rem
+		}
 	}
 
 	&_project-link{
@@ -272,11 +378,17 @@
 		text-align: center;
 		border-radius: 10px;
 		border: 1px solid #f2e5d23d;
+		width: 12rem;
+
+		@include middle(){
+			width: 8rem;
+		}
 
 		&:hover{
 			background-color: $base;
 			color: $primary;
 			transition: all 0.3s ease-in-out;
 		}
+
 	}
 }

@@ -8,7 +8,14 @@
 	@include des(){
 		margin: 20rem 0 0 0;
 	}
+
+	@include middle(){
+		margin: 10rem 0 0 0;
+	}
 	
+	@include tab(){
+		margin: 7rem 0 0 0;
+	}
 	
 
 	&-container{
@@ -17,6 +24,7 @@
 
 		.About-img{
 			max-width: 45rem;
+			min-width: 30rem;
 			opacity: 0.7;
 			transition: all 0.3s ease-in-out;
 			border-radius: 10px;
@@ -30,20 +38,18 @@
 			@include gl(){
 				width: 100%;
 				height: 100%;
-				border-radius: 10px;
+			}
+			@include tab(){
+				min-width: 20rem
 			}
 
-			@include des(){
-				width: 30rem;
-				height: 100%;
-				border-radius: 10px;
-			}
 
 		}
 		.About-p{
 			position: absolute;
 			inset: 0;
 			width: 65rem;
+
 
 			top: 10%;
 			left: 30%;
@@ -61,9 +67,25 @@
 			@include des(){
 				top: 50%;
 				left: 15%;
-				width: 50rem;
+				width: 45rem;
 				font-size: $font-size-0;
 				line-height: 72px;
+			}
+
+			@include middle(){
+				top: 50%;
+				left: 10%;
+				width: 40rem;
+				font-size: $font-size-0;
+				line-height: 72px;
+			}
+
+			@include tab(){
+				width: 100%;
+				top: 100%;
+				left: 0;
+				font-size: $font-size-3;
+				line-height: 50px;	
 			}
 
 			span{
