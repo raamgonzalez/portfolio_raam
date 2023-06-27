@@ -10,7 +10,6 @@
 .NavBar{
 	position: fixed;
 	inset: 0;
-	// right: 7%;
 	top: 5%;
 	width: fit-content;
 	height: fit-content;
@@ -36,6 +35,14 @@
 		inset: 0;
 		top: 93%;
 	}
+	@include mob(){
+		margin: 0 auto;
+		padding: 0.5rem 1rem;
+		width: 90%;	
+		inset: 0;
+		gap: 1rem;
+		top: 90%;
+	}
 
 	&-a{
 		color: $base;
@@ -46,6 +53,12 @@
 			opacity: 1;
 			filter: blur(0px);
 			transition: all 0.3s ease-in-out;
+		}
+
+		@include mob(){
+			font-size: 8px;
+			gap: 0.5rem;
+			line-height: 24px;
 		}
 	}
 }
@@ -80,6 +93,9 @@
 	}
 	@include middle(){
 		right: 5%;
+	}
+	@include mob(){
+		display: none;
 	}
 
 	&::before{

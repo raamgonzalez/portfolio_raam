@@ -8,19 +8,39 @@
 	@include tab(){
 		padding: 0 2rem 85px 2rem;
 	}
+	@include mob(){
+		flex-direction: column-reverse;
+		padding: 0 0 85px 0;
+	}
 
 	&-img{
 		width: 10rem;
+
+		@include mob(){
+			width: 5rem;
+		}
 	}
 	&-socials{
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
+
+		@include mob(){
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0 0 1rem 0;
+		}
 	}
 	&-a{
 		font-size: $font-size-3;
 		font-family: $font-other;
 		padding: 0.1em 0.5em;
+
+		@include mob(){
+			font-size: 16px;
+		}
 
 		&:hover{
 			background-color: $base;

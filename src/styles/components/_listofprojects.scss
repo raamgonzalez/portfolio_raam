@@ -13,13 +13,14 @@
 	@include gl(){
 		margin: 50rem 0 0 0;
 	}
-
 	@include middle(){
 		margin: 40rem 0 0 0;
 	}
-
 	@include tab(){
 		margin: 43rem 0 0 0;
+	}
+	@include mob(){
+		margin: 40rem 0 0 0;
 	}
 }
 
@@ -33,6 +34,9 @@
 		margin: 55rem 0 0 0;
 	}
 	@include tab(){
+		margin: 50rem 0 0 0;
+	}
+	@include mob(){
 		margin: 50rem 0 0 0;
 	}
 }
@@ -62,6 +66,12 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 2rem;
+	}
+	@include mob(){
+		padding: 0;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
 	}
 
 
@@ -120,6 +130,10 @@
 			margin: 0;
 			width: 100%;
 		}
+		@include mob(){
+			margin: 0;
+			width: 100%;
+		}
 
 
 		.Project-name{
@@ -132,6 +146,11 @@
 			font-family: $font-other;
 			line-height: 40px;
 			font-weight: 300;
+
+			@include mob(){
+				font-size: $font-size-4;
+				line-height: 32px;
+			}
 		}
 	}
 	&-soft{
@@ -141,6 +160,12 @@
 		gap: 1rem;
 		font-family: $font-other;
 		font-size: $font-size-4;
+
+		@include mob(){
+			font-size: 12px;
+			gap: 0.5rem;
+			line-height: 24px;
+		}
 
 	}
 	&-links{
@@ -152,6 +177,9 @@
 		}
 		@include tab(){
 			gap: 1rem
+		}
+		@include mob(){
+			gap: 0.5rem
 		}
 	}
 	&-link{
@@ -178,6 +206,10 @@
 	margin: 160px 0 0 0;
 
 	@include tab(){
+		padding: 0;
+	}
+	@include mob(){
+		margin: 160px 0 0 0;
 		padding: 0;
 	}
 }
@@ -237,6 +269,10 @@
 			grid-template-columns: 0.25fr 1fr 1fr;
 			gap: 2rem;
 		}
+		@include mob(){
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
 
 
 		span{
@@ -278,6 +314,9 @@
 			}
 			@include tab(){
 				display: none;
+			}
+			@include mob(){
+				font-size: $font-size-4;
 			}
 		}
 
@@ -358,6 +397,9 @@
 				margin: 0 0 0 1rem;
 			}
 		}
+		@include mob(){
+			display: none;
+		}
 	}
 
 	&_project-buttons{
@@ -382,6 +424,10 @@
 
 		@include middle(){
 			width: 8rem;
+		}
+		@include mob(){
+			gap: 0.5rem;
+			line-height: 24px;
 		}
 
 		&:hover{

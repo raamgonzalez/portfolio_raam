@@ -17,10 +17,19 @@
 		margin: 7rem 0 0 0;
 	}
 	
+	@include mob(){
+		margin: 7rem 0 0 0;
+	}
+	
 
 	&-container{
 		position: relative;
 		padding: 0 40px 0 40px;
+
+		@include mob(){
+			margin: 0;
+			padding: 0;
+		}
 
 		.About-img{
 			max-width: 45rem;
@@ -42,8 +51,10 @@
 			@include tab(){
 				min-width: 20rem
 			}
-
-
+			@include mob(){
+				min-width: 10rem;
+				margin: 0;
+			}
 		}
 		.About-p{
 			position: absolute;
@@ -86,6 +97,14 @@
 				left: 0;
 				font-size: $font-size-3;
 				line-height: 50px;	
+			}
+
+			@include mob(){
+				width: 100%;
+				top: 100%;
+				left: 0;
+				font-size: $font-size-4;
+				line-height: 32px;	
 			}
 
 			span{

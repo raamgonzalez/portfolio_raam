@@ -176,6 +176,9 @@ body {
   @include tab(){
     padding: 0 1rem;
   }
+  @include mob(){
+    padding: 0 1rem;
+  }
 }
 
 

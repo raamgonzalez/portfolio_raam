@@ -35,6 +35,11 @@
 			flex-direction: column;
 			gap: 5rem;
 		}
+		@include mob(){
+			width: 100%;
+			flex-direction: column;
+			gap: 5rem;
+		}
 	}
 	&-a{
 		@include link(center, 0.5em 1em);
@@ -49,6 +54,10 @@
 			color: $primary;
 			border-radius: 5px;
 			transition: all 0.3s ease-in-out;
+		}
+		@include mob(){
+			padding: 1rem 2rem;
+			font-size: $font-size-1;
 		}
 	}
 }

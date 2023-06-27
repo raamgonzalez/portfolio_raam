@@ -21,5 +21,8 @@ export const StyledGridLine = styled.div`
   @media (480px <= width <= 768px) {
     margin: 40px 0 40px 0;
   }
+  @media (240px <= width <= 480px) {
+    margin: 20px 0 20px 0;
+  }
 
 `
