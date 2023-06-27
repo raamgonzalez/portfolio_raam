@@ -37,9 +37,9 @@
 	}
 	@include mob(){
 		margin: 0 auto;
-		padding: 0.5rem 1rem;
-		width: 90%;	
+		padding: 1rem 0.5rem;
 		inset: 0;
+		width: 90%;	
 		gap: 1rem;
 		top: 90%;
 	}
@@ -56,7 +56,7 @@
 		}
 
 		@include mob(){
-			font-size: 8px;
+			font-size: $font-size-4;
 			gap: 0.5rem;
 			line-height: 24px;
 		}

@@ -8,6 +8,10 @@
 	&-img{
 		width: 3rem;
 		animation: arrow 1s ease-in-out infinite;
+
+		@include mob(){
+			width: 2rem;
+		}
 	}
 
 	arrow{

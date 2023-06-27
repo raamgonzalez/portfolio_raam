@@ -20,7 +20,7 @@
 		margin: 43rem 0 0 0;
 	}
 	@include mob(){
-		margin: 40rem 0 0 0;
+		margin: 35rem 0 0 0;
 	}
 }
 
@@ -37,7 +37,7 @@
 		margin: 50rem 0 0 0;
 	}
 	@include mob(){
-		margin: 50rem 0 0 0;
+		margin: 43rem 0 0 0;
 	}
 }
 
@@ -101,6 +101,12 @@
 		@include des(){
 			width: 20rem;
 			align-self: center;
+		}
+		@include tab(){
+			border: solid 1px black;	
+		}
+		@include mob(){
+			border: solid 1px black;	
 		}
 	}
 	&-content{
@@ -193,6 +199,9 @@
 			color: $primary;
 			transition: all 0.3s ease-in-out;
 		}
+		@include mob(){
+			font-size: 14px;
+		}
 	}	
 	&-link--disabled{
 		@include link(center, 0.5em 1em);
@@ -222,6 +231,10 @@
 
 	&-h4{
 		font-size: $font-size-3;
+
+		@include mob(){
+			font-size: $font-size-4;
+		}
 	}
 
 	&-container--open{
@@ -413,6 +426,10 @@
 		@include tab(){
 			gap: 0.5rem
 		}
+		@include mob(){
+			gap: 0.5rem;
+			flex-direction: row;	
+		}
 	}
 
 	&_project-link{
@@ -426,6 +443,8 @@
 			width: 8rem;
 		}
 		@include mob(){
+			font-size: 14px;
+			width: 100%;
 			gap: 0.5rem;
 			line-height: 24px;
 		}
