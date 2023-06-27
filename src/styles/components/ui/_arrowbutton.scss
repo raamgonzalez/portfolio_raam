@@ -7,8 +7,12 @@
 
 	&-img{
 		width: 3rem;
+		height: auto;
 		animation: arrow 1s ease-in-out infinite;
 
+		&:hover{
+			animation: none;
+		}
 		@include mob(){
 			width: 2rem;
 		}
