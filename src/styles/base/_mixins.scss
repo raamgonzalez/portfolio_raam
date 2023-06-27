@@ -43,8 +43,8 @@
 	}
 }
 
-@mixin gl( $min : 1260px, $max : 1630px ){
-	@media (max-width: $min) {
+@mixin gl( $min : 1260px, $max : 1629px ){
+	@media (min-width: $min) and (max-width: $max) {
 			@content; 
 	}
 }

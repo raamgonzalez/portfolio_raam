@@ -45,7 +45,7 @@ function Projects () {
           <p>{t('projects.description.index')}</p>
           <p>{t('projects.description.project')}</p>
           <p>{t('projects.description.description')}</p>
-          <p>{t('projects.description.image')}</p>
+          <p className='Projects_project-description--display'>{t('projects.description.image')}</p>
           <p>LINKS</p>
         </section>
         {

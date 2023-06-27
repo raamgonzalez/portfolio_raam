@@ -9,10 +9,18 @@
 		flex-direction: column;
 		gap: 4rem;
 	}
+
+	@include gl(){
+		margin: 50rem 0 0 0;
+	}
 }
 
 .ListOfProjects--margin{
 	margin: 95rem 0 0 0;
+
+	@include gl(){
+		margin: 70rem 0 0 0;
+	}
 }
 
 .Project{
@@ -23,16 +31,20 @@
 
   letter-spacing: 0.2rem;
 
+
+	@include gl(){
+		padding: 20px 0.5rem 20px;
+	}
+
 	@include des(){
-		flex-direction: column;
-		gap: 2rem;
+		padding: 20px 0.3rem 20px;
 	}
 	
 
 
 	&-img{
 		width: 45rem;
-		height: 34rem;
+		height: auto;
 		cursor: cell;
 		object-fit: cover;
 		opacity: 0.7;
@@ -44,6 +56,18 @@
 			opacity: 1;
 			filter: grayscale(20%);
 			transition: all 0.3s ease-in-out;
+		}
+
+		@include gl(){
+			width: 40rem;
+			height: auto;
+			align-self: center;
+			place-items: center;
+		}
+		@include des(){
+			width: 30rem;
+			height: auto;
+			align-self: center;
 		}
 	}
 	&-content{
@@ -59,8 +83,12 @@
 		font-family: $font-base-regular;
 		line-height: 40px;
 
+		@include gl(){
+			margin: 0 0 0 160px ;
+		}
+
 		@include des(){
-			margin: 2rem 0 0 0;
+			margin: 2rem 0 0 80px;
 		}
 
 		.Project-name{
@@ -83,7 +111,6 @@
 		font-family: $font-other;
 		font-size: $font-size-4;
 
-
 	}
 	&-links{
 		display: flex;
@@ -96,6 +123,8 @@
 	&-link{
 		@include link(center, 0.5em 1em);
 		border-radius: 10px;
+		border: 1px solid #f2e5d23d;
+		color: $base;
 
 		&:hover{
 			background-color: $base;
@@ -157,6 +186,11 @@
 		justify-content: center;
 		gap: 5rem;
 
+		@include des(){
+			display: grid;
+			grid-template-columns: 0.25fr 0.5fr 1fr 0.25fr;
+		}
+
 		span{
 			font-size: $font-size-3;
 			font-family: $font-base-light;
@@ -165,19 +199,20 @@
 
 		h4{
 			display: inline-block;
-			font-size: $font-size-4;
+			font-size: $font-size-3;
 			font-family: $font-base-light;
 			align-self: center;
 			line-height: 2rem;
 			
 		}
 		p{
-			font-size: $font-size-4;
+			font-size: $font-size-3;
 			font-family: $font-other;
 			line-height: 2rem;
 			font-weight: 300;
 			align-self: center;
 		}
+
 		img{
 			cursor: cell;
 			opacity: 0.7;
@@ -195,6 +230,10 @@
 				filter: grayscale(20%);
 				transition: all 0.4s ease-in-out;
 			}
+
+			@include des(){
+				display: none;
+			}
 		}
 	}
 
@@ -210,6 +249,13 @@
 		margin: 0 0 2rem 0;
 		padding: 0 0 2em 0;
 		border-bottom: 1px dotted #2c2c2c;
+
+		@include des(){
+			grid-template-columns: 0.25fr 0.5fr 1fr 0.5fr;
+			&--display{
+				display: none;
+			}
+		}
 	}
 
 	&_project-buttons{
@@ -222,8 +268,10 @@
 	}
 
 	&_project-link{
-		@include link(left, 0.5em 0 0.5em 1em);
+		@include link(left, 0.7rem 0.1rem);
+		text-align: center;
 		border-radius: 10px;
+		border: 1px solid #f2e5d23d;
 
 		&:hover{
 			background-color: $base;
