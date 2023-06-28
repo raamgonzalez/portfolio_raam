@@ -181,9 +181,9 @@ export const data = {
         'Todolist realizado en Vue con Vite. Trabaja como una app para seguir tareas',
       soft: ['html', 'css', 'javascript', 'vue', 'vite'],
       media: '/media/projects/project_todolist.jpg',
-      urlgit: 'https://weather-app-react-seven-zeta.vercel.app/',
+      urlgit: 'https://github.com/raamgonzalez/todo-list_vue',
       urldeploy:
-        'https://github.com/raamgonzalez/weather-app_react.git',
+        'https://todo-list-vue-pied.vercel.app/',
       state: true
     },
     {
