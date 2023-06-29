@@ -325,6 +325,12 @@ export const data = {
     },
     {
       id: uuidv4(),
+      title: 'typescript',
+      img: './media/skills/softs/soft_typescript.svg',
+      state: true
+    },
+    {
+      id: uuidv4(),
       title: 'astro',
       img: '#',
       state: false
