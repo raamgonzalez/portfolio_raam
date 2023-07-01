@@ -1,6 +1,7 @@
 import Titles from './Titles'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import Balancer from 'react-wrap-balancer'
 
 const container = {
   hidden: { opacity: 1, x: -200 },
@@ -44,7 +45,7 @@ export default function SkillsLight () {
       >
         {softskills.map((softskill, index) => (
           <motion.div key={index}>
-            <span>→</span><p variants={item}>{softskill}</p>
+            <span>→</span><p className='Light-p' variants={item}>{softskill}</p>
           </motion.div>
         ))}
       </motion.section>

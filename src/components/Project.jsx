@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import Balancer from 'react-wrap-balancer'
 
 export default function Project (props) {
   const [t, i18n] = useTranslation('global')
@@ -10,7 +11,7 @@ export default function Project (props) {
         <img className='Project-img' src={media} />
         <section className='Project-content'>
           <h4 className='Project-name'>{name.toUpperCase()}</h4>
-          <p className='Project-description'>{i18n.language === 'en' ? descriptionEN : descriptionES}</p>
+          <Balancer className='Project-description'>{i18n.language === 'en' ? descriptionEN : descriptionES}</Balancer>
           <secction className='Project-soft'>
             {soft.map((software, index) => (
               <p key={index}>{software.toUpperCase()}</p>))}

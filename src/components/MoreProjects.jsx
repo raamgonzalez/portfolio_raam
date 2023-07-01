@@ -6,6 +6,7 @@ import { GlobalContext } from '../context/GlobalContext'
 import { motion } from 'framer-motion'
 import ArrowButton from './ui/ArrowButton'
 import { useTranslation } from 'react-i18next'
+import Balancer from 'react-wrap-balancer'
 
 function Projects () {
   const { projects } = useContext(GlobalContext)
@@ -60,7 +61,7 @@ function Projects () {
   >
     <span className=''>{(index + 1).toString().padStart(2, '0')}</span>
     <h4>{project.name.toUpperCase()}</h4>
-    <p>{i18n.language === 'en' ? project.descriptionEN : project.descriptionES}</p>
+    <Balancer className='Projects_project-p'>{i18n.language === 'en' ? project.descriptionEN : project.descriptionES}</Balancer>
     <img src={project.media} />
     <section className='Projects_project-buttons'>
       <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View Project' : 'Ver Proyecto'}</a>
