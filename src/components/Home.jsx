@@ -5,9 +5,6 @@ export default function Home () {
   return (
     <>
       <Logo />
-      {/* <div className='mt-20'>
-        <ArrowButton />
-      </div> */}
     </>
   )
 }

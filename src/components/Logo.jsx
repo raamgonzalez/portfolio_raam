@@ -29,9 +29,6 @@ const iconfill = {
 
 export default function Logo () {
   return (
-  // <section className='Logo'>
-  //   <img className='Logo-img' src='./media/about/portfolio_brand.svg' alt="Image de logo que forma la palabra 'Raam' " />
-  // </section>
     <div className='Home'>
       <div className='Logo'>
         <motion.svg

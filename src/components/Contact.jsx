@@ -1,10 +1,6 @@
-import React, { useContext } from 'react'
-
-import { GlobalContext } from '../context/GlobalContext'
 import ArrowButton from './ui/ArrowButton'
 
 export default function Contact () {
-  const { rrss } = useContext(GlobalContext)
   return (
     <div className='Contact'>
       <ArrowButton />

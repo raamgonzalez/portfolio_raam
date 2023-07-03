@@ -39,7 +39,7 @@ function Projects () {
     <>
       <div class='Projects'>
         <h4 className='Projects-h4'>{t('projects.moreprojects')}</h4>
-        <button onClick={handleClickOpen} className={`Projects-button ${isOpen ? 'Projects-button-open' : null}`}><ArrowButton /></button>
+        <button aria-label='Button Arrow' onClick={handleClickOpen} className={`Projects-button ${isOpen ? 'Projects-button-open' : null}`}><ArrowButton /></button>
       </div>
       <div className={`${isOpen ? 'Projects-container--open' : 'Projects-container--close'}`}>
         <section className='Projects_project-description'>

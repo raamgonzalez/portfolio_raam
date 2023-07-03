@@ -11,7 +11,7 @@ export default function Footer () {
     <>
       <StyledGridLine />
       <section className='Footer'>
-        <img className='Footer-img' src='./media/about/portfolio_brand.svg' />
+        <img className='Footer-img' src='./media/about/portfolio_brand.svg' alt='Imagen del logo del desarollador Ramsés González' />
         <div className='Footer-socials'>
           {rrss.map(({ name, state, href, id }) => state && <a className='Footer-a' key={id} href={href}>{name.toUpperCase()}</a>)}
         </div>

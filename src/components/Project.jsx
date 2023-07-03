@@ -8,7 +8,7 @@ export default function Project (props) {
   return (
     <>
       <section className='Project'>
-        <img className='Project-img' src={media} />
+        <img className='Project-img' src={media} alt={`Imagen de proyecto de nombre ${name}`} />
         <section className='Project-content'>
           <h4 className='Project-name'>{name.toUpperCase()}</h4>
           <Balancer className='Project-description'>{i18n.language === 'en' ? descriptionEN : descriptionES}</Balancer>
@@ -18,7 +18,7 @@ export default function Project (props) {
           </secction>
           <section className='Project-links'>
             <a className='Project-link' href={urldeploy} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View Project' : 'Ver Proyecto'}</a>
-            <a className={urlgit ? 'Project-link' : 'Project-link--disabled'} href={urlgit || null} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View code' : 'Ver Código'}</a>
+            <a className={urlgit ? 'Project-link' : 'Project-link--disabled'} href={urlgit || '#'} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View code' : 'Ver Código'}</a>
             {/* urlgit ? 'Ver código' : 'Private' */}
           </section>
         </section>
