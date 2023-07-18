@@ -15,17 +15,17 @@ export default function NavBar () {
   return (
     <ul className='NavBar'>
       <li className='NavBar-li'>
-        <a onClick={handleClick} className={activeLink === '#about' ? 'NavBar-a active' : 'NavBar-a blur-[1px]'} href='#about'>
+        <a onClick={handleClick} className={activeLink === '#about' ? 'NavBar-a active' : 'NavBar-a'} href='#about'>
           {t('navbar.about')}
         </a>
       </li>
       <li className='NavBar-li'>
-        <a onClick={handleClick} className={activeLink === '#projects' ? 'NavBar-a active' : 'NavBar-a blur-[1px]'} href='#projects'>
+        <a onClick={handleClick} className={activeLink === '#projects' ? 'NavBar-a active' : 'NavBar-a'} href='#projects'>
           {t('navbar.projects')}
         </a>
       </li>
       <li className='NavBar-li'>
-        <a a onClick={handleClick} className={activeLink === '#skills' ? 'NavBar-a active' : 'NavBar-a blur-[1px]'} href='#skills'>
+        <a a onClick={handleClick} className={activeLink === '#skills' ? 'NavBar-a active' : 'NavBar-a'} href='#skills'>
           {t('navbar.skills')}
         </a>
       </li>
