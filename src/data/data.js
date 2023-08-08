@@ -46,6 +46,22 @@ export const data = {
 
     {
       id: uuidv4(),
+      name: 'api met',
+      descriptionEN:
+        'Website that retrieves data from the API of the Metropolitan Museum of, Art in New York. Project built for practicing API requests.',
+      descriptionES:
+        'Web que toma los datos de la API del mstateo Met, de New York, proyecto realizado para practicar peticiones',
+      soft: ['html', 'css', 'javascript', 'react', 'tailwindcss'],
+      media: '/media/projects/project_apimet.jpg',
+      mediavideo: '/media/projects/videos/project_apimet.webm',
+      urlgit: 'https://github.com/raamgonzalez/apiMET.git',
+      urldeploy:
+        'https://api-met.vercel.app/',
+      state: true,
+      important: false
+    },
+    {
+      id: uuidv4(),
       name: 'mov movies',
       descriptionEN:
         'A website created for performance practice. It is a movie search application.',
@@ -53,6 +69,7 @@ export const data = {
         'Una web creada para practicar el rendimiento. Es una aplicación de búsqueda de películas.',
       soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
       media: '/media/projects/project_movmovies.jpg',
+      mediavideo: '',
       urlgit: 'https://github.com/raamgonzalez/movmovies.git',
       urldeploy: 'https://movmovies.vercel.app/',
       state: true,
@@ -67,6 +84,7 @@ export const data = {
         'Una web creada como proyecto de práctica, el sitio incluye una consulta de API para preguntas y fue desarrollado usando React.',
       soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
       media: '/media/projects/project_quizapp.jpg',
+      mediavideo: '/media/projects/videos/project_quizapp.webm',
       urlgit: 'https://github.com/raamgonzalez/quiz-app_react',
       urldeploy: 'https://quiz-app-react-ebon.vercel.app/',
       state: true,
@@ -81,6 +99,7 @@ export const data = {
         'Una web creada como práctica de combinar dos consultas de API separadas, desarrollada usando React.',
       soft: ['html', 'css', 'javascript', 'reactjs', 'tailwindcss'],
       media: '/media/projects/project_apicat.jpg',
+      mediavideo: '',
       urlgit: 'https://github.com/raamgonzalez/apiCat',
       urldeploy: 'https://api-cat-eight.vercel.app/',
       state: true,
@@ -95,6 +114,7 @@ export const data = {
         'Agencia de Branding, Rebranding y Fotografía de Productos llamada Tente Lab. La web es una página estática con un formulario conectado al email del cliente. Trabajo con un equipo de diseñadores UX/UI y programadores.',
       soft: ['html', 'css', 'javascript', 'reactjs', 'sass'],
       media: '/media/projects/project_tentelab.jpg',
+      mediavideo: '/media/projects/videos/project_tentelab.webm',
       urlgit: '',
       urldeploy: 'https://tente-lab.vercel.app/',
       state: true,
@@ -109,6 +129,7 @@ export const data = {
       'Tienda de venta de productos tecnologicos, aproveche para incorporar mock async',
       soft: ['html', 'css', 'javascript', 'reactjs', 'firebase', 'axios', 'sass'],
       media: '/media/projects/project_tecnophil.jpg',
+      mediavideo: '/media/projects/videos/project_tecnophil.webm',
       urlgit: 'https://github.com/raamgonzalez/Ecommerce-Tecnophil_Gonzalez',
       urldeploy: 'https://ecommerce-react-34850.vercel.app/',
       state: true,
@@ -123,6 +144,7 @@ export const data = {
       'Web realizada con el fin de mostrar mis trabajos y desarrollo como programador',
       soft: ['html', 'css', 'javascript', 'reactjs', 'sass'],
       media: '/media/projects/project_portfolio.jpg',
+      mediavideo: '/media/projects/videos/project_portfolio.webm',
       urlgit: 'https://github.com/raamgonzalez/portfolio-profile_RG.git',
       urldeploy: 'https://portfolio-profile-rg.vercel.app',
       state: true,
@@ -130,16 +152,17 @@ export const data = {
     },
     {
       id: uuidv4(),
-      name: 'api met',
+      name: 'Web writer',
       descriptionEN:
-        'Website that retrieves data from the API of the Metropolitan Mstateum of, Art in New York. Project built for practicing API requests.',
+        "The project was carried out entirely by me, I bet on a sober design that highlights the literary qualities. Designed in Figma and programmed in Astro with CSS, this project helped me practice Astro's island system and React components with TypeScript.",
       descriptionES:
-        'Web que toma los datos de la API del mstateo Met, de New York, proyecto realizado para practicar peticiones',
-      soft: ['html', 'css', 'javascript', 'react', 'tailwindcss'],
-      media: '/media/projects/project_apimet.jpg',
-      urlgit: 'https://github.com/raamgonzalez/apiMET.git',
+        'El proyecto fue realizado íntegramente por mi, aposte por un diseño sobrio que resalte las cualidades literarias. Diseñado en Figma y programado en Astro con CSS, este proyecto me sirvió para practicar el sistema de islas de Astro y componentes React con TypeScript.',
+      soft: ['html', 'css', 'javascript', 'astro', 'typescript'],
+      media: '/media/projects/project_webwriter.jpg',
+      mediavideo: '/media/projects/videos/project_webwriter.webm',
+      urlgit: '',
       urldeploy:
-        'https://api-met.vercel.app/',
+        'https://www.ogiglesias.com.ar/',
       state: true,
       important: true
     },
@@ -152,6 +175,7 @@ export const data = {
         'Web creada para un curso de programación full-stack en Python.',
       soft: ['html', 'css'],
       media: '/media/projects/project_regulux.jpg',
+      mediavideo: '/media/projects/videos/project_regulux.webm',
       urlgit:
         'https://github.com/FerBarreyro/TPO-Desarrollo-WEB-Equipo-14-Comisi-n-22523.github.io',
       urldeploy: 'https://reguluxlamp.netlify.app/',
@@ -167,6 +191,7 @@ export const data = {
         'Web para tienda de camisetas de futbol realizada en javascript vanilla',
       soft: ['html', 'css', 'javascript'],
       media: '/media/projects/project_camisetasdprimera.jpg',
+      mediavideo: '/media/projects/videos/project_camisetasdeprimera.webm',
       urlgit: 'https://github.com/raamgonzalez/Ecommerce-Camisetas_Javascript',
       urldeploy: 'https://ecommerce-camisetasde1.netlify.app/',
       state: true,
@@ -181,6 +206,7 @@ export const data = {
         'Todolist realizado en Vue con Vite. Trabaja como una app para seguir tareas',
       soft: ['html', 'css', 'javascript', 'vue', 'vite'],
       media: '/media/projects/project_todolist.jpg',
+      mediavideo: '/media/projects/videos/project_todolist.webm',
       urlgit: 'https://github.com/raamgonzalez/todo-list_vue',
       urldeploy:
         'https://todo-list-vue-pied.vercel.app/',
@@ -195,6 +221,7 @@ export const data = {
         'Aplicación del clima realizado en Vue con Vite. Tiene sincronización con API de clima.',
       soft: ['html', 'css', 'javascript', 'vue', 'vite'],
       media: '/media/projects/project_appclima.jpg',
+      mediavideo: '/media/projects/videos/project_appclima.webm',
       urlgit: 'https://github.com/raamgonzalez/weather-app_react.git',
       urldeploy:
         'https://weather-app-react-seven-zeta.vercel.app/',
@@ -210,6 +237,7 @@ export const data = {
         'Aplicación para practicar escritura',
       soft: ['html', 'css', 'javascript', 'react', 'vite', 'framer-motion'],
       media: '/media/projects/project_writeperminute.jpg',
+      mediavideo: '/media/projects/videos/project_writeperminute.webm',
       urlgit: 'https://github.com/raamgonzalez/writeperminute',
       urldeploy:
         'https://wordsperminute.vercel.app/',
@@ -225,6 +253,7 @@ export const data = {
         'Buscador de gifs, trabaja con APi de Giphy',
       soft: ['html', 'css', 'javascript', 'react', 'vite', 'framer-motion'],
       media: '/media/projects/project_gifshooot.jpg',
+      mediavideo: '/media/projects/videos/project_gifshooot.webm',
       urlgit: 'https://github.com/raamgonzalez/gifshoot',
       urldeploy:
         'https://gifshoot.vercel.app/',
@@ -254,6 +283,7 @@ export const data = {
         'App de seguimiento de tiempo, desafío de front end mentor.',
       soft: ['html', 'css', 'react', 'tailwindcss', 'nextjs'],
       media: './media/projects/project_timetracking.jpg',
+      mediavideo: '/media/projects/videos/project_timetracking.webm',
       urlgit: 'https://github.com/raamgonzalez/timetracking-mentor.git',
       urldeploy:
         'https://timetracking-mentor.vercel.app/',

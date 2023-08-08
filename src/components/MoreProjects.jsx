@@ -62,7 +62,15 @@ function Projects () {
     <span className=''>{(index + 1).toString().padStart(2, '0')}</span>
     <h4>{project.name.toUpperCase()}</h4>
     <Balancer className='Projects_project-p'>{i18n.language === 'en' ? project.descriptionEN : project.descriptionES}</Balancer>
-    <img src={project.media} />
+    {
+        project.mediavideo
+          ? (
+            <video className='Project-project-video' autoPlay loop muted>
+              <source src={project.mediavideo} type='video/mp4' />
+            </video>
+            )
+          : (<img className='Project-project-img' src={project.media} alt={`Imagen de proyecto de nombre ${project.name}`} />)
+        }
     <section className='Projects_project-buttons'>
       <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View Project' : 'Ver Proyecto'}</a>
       <a className='Projects_project-link' href={project.urlgit} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View code' : 'Ver Código'}</a>

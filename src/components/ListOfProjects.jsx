@@ -28,7 +28,6 @@ export default function ListOfProjects () {
   		}
         </section>
       </section>
-      {/* <IconsSoft /> */}
       <MoreProjects />
     </>
   )

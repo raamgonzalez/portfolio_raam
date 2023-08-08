@@ -3,12 +3,20 @@ import Balancer from 'react-wrap-balancer'
 
 export default function Project (props) {
   const [t, i18n] = useTranslation('global')
-  const { name, descriptionEN, descriptionES, media, soft, urlgit, urldeploy } = props.project
+  const { name, descriptionEN, descriptionES, media, mediavideo, soft, urlgit, urldeploy } = props.project
 
   return (
     <>
       <section className='Project'>
-        <img className='Project-img' src={media} alt={`Imagen de proyecto de nombre ${name}`} />
+        {
+        mediavideo
+          ? (
+            <video className='Project-video' autoPlay loop muted>
+              <source src={mediavideo} type='video/mp4' />
+            </video>
+            )
+          : (<img className='Project-img' src={media} alt={`Imagen de proyecto de nombre ${name}`} />)
+        }
         <section className='Project-content'>
           <h4 className='Project-name'>{name.toUpperCase()}</h4>
           <Balancer className='Project-description'>{i18n.language === 'en' ? descriptionEN : descriptionES}</Balancer>
@@ -19,7 +27,6 @@ export default function Project (props) {
           <section className='Project-links'>
             <a className='Project-link' href={urldeploy} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View Project' : 'Ver Proyecto'}</a>
             <a className={urlgit ? 'Project-link' : 'Project-link--disabled'} href={urlgit || '#'} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View code' : 'Ver Código'}</a>
-            {/* urlgit ? 'Ver código' : 'Private' */}
           </section>
         </section>
       </section>
