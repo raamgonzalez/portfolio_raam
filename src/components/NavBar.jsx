@@ -25,7 +25,7 @@ export default function NavBar () {
         </a>
       </li>
       <li className='NavBar-li'>
-        <a a onClick={handleClick} className={activeLink === '#skills' ? 'NavBar-a active' : 'NavBar-a'} href='#skills'>
+        <a onClick={handleClick} className={activeLink === '#skills' ? 'NavBar-a active' : 'NavBar-a'} href='#skills'>
           {t('navbar.skills')}
         </a>
       </li>

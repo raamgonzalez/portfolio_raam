@@ -28,7 +28,8 @@
     "styled-components": "5.3.3",
     "three": "^0.152.2",
     "uuid": "^9.0.0",
-    "wouter": "^2.11.0"
+    "wouter": "^2.11.0",
+    "zsh": "^0.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

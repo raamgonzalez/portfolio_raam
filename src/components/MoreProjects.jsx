@@ -37,7 +37,7 @@ function Projects () {
 
   return (
     <>
-      <div class='Projects'>
+      <div className='Projects'>
         <h4 className='Projects-h4'>{t('projects.moreprojects')}</h4>
         <button aria-label='Button Arrow' onClick={handleClickOpen} className={`Projects-button ${isOpen ? 'Projects-button-open' : null}`}><ArrowButton /></button>
       </div>
@@ -65,12 +65,12 @@ function Projects () {
     {
         project.mediavideo
           ? (
-            <video className='Project-project-video' autoPlay loop muted>
+            <video className='Project-project-video' poster={project.media} autoPlay loop muted>
               <source src={project.mediavideo} type='video/mp4' />
             </video>
             )
           : (<img className='Project-project-img' src={project.media} alt={`Imagen de proyecto de nombre ${project.name}`} />)
-        }
+    }
     <section className='Projects_project-buttons'>
       <a className='Projects_project-link' href={project.urldeploy} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View Project' : 'Ver Proyecto'}</a>
       <a className='Projects_project-link' href={project.urlgit} target='_blank' rel='noreferrer'>{i18n.language === 'en' ? 'View code' : 'Ver Código'}</a>

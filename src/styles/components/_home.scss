@@ -19,5 +19,9 @@
 	&-img{
 		width: 64rem;
 	}
+	&-before{
+		display: flex;
+		flex-direction: column;
+	}
 }
 

@@ -126,7 +126,7 @@ export const data = {
       descriptionEN:
         'Online store selling technological products, took advantage of incorporating mock async.',
       descriptionES:
-      'Tienda de venta de productos tecnologicos, aproveche para incorporar mock async',
+        'Tienda de venta de productos tecnologicos, aproveche para incorporar mock async',
       soft: ['html', 'css', 'javascript', 'reactjs', 'firebase', 'axios', 'sass'],
       media: '/media/projects/project_tecnophil.jpg',
       mediavideo: '/media/projects/videos/project_tecnophil.webm',
@@ -141,7 +141,7 @@ export const data = {
       descriptionEN:
         'Website created to showcase my work and development as a programmer.',
       descriptionES:
-      'Web realizada con el fin de mostrar mis trabajos y desarrollo como programador',
+        'Web realizada con el fin de mostrar mis trabajos y desarrollo como programador',
       soft: ['html', 'css', 'javascript', 'reactjs', 'sass'],
       media: '/media/projects/project_portfolio.jpg',
       mediavideo: '/media/projects/videos/project_portfolio.webm',
@@ -289,9 +289,24 @@ export const data = {
         'https://timetracking-mentor.vercel.app/',
       state: true,
       important: false
+    },
+    {
+      id: uuidv4(),
+      name: 'gringolandia',
+      descriptionEN:
+        'In this project I used libraries such as Swiper and Framer Motion for the animations, in addition to continuing to work on native CSS with its new functions.',
+      descriptionES:
+        'En este proyecto utilice librerías como Swiper y Framer Motion para las animaciones, ademas de seguir trabajando CSS nativo con sus nuevas funciones.',
+      soft: ['html', 'css', 'javascript', 'vue', 'vite', 'Framer motion', 'Swiper'],
+      media: '/media/projects/project_gringolandia.jpg',
+      mediavideo: '/media/projects/videos/project_gringolandia.webm',
+      urlgit: '',
+      urldeploy:
+        'https://www.gringolandiaenglish.com/',
+      state: true,
+      important: true
     }
   ],
-
   softwares: [
     {
       id: uuidv4(),

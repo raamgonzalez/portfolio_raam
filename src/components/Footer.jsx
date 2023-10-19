@@ -5,8 +5,6 @@ import { GlobalContext } from '../context/GlobalContext'
 export default function Footer () {
   const { rrss } = useContext(GlobalContext)
 
-  console.log(rrss)
-
   return (
     <>
       <StyledGridLine />
