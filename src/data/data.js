@@ -376,6 +376,18 @@ export const data = {
     },
     {
       id: uuidv4(),
+      title: 'chagpt',
+      img: './media/skills/softs/soft_chatgpt.svg',
+      state: true
+    },
+    {
+      id: uuidv4(),
+      title: 'Claude',
+      img: './media/skills/softs/soft_claude.svg',
+      state: true
+    },
+    {
+      id: uuidv4(),
       title: 'astro',
       img: '#',
       state: false
