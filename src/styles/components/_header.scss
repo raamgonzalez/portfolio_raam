@@ -1,4 +1,4 @@
-.Header{
+.Header {
 	display: flex;
 	width: 100%;
 	position: relative;
@@ -7,7 +7,7 @@
 	font-weight: 600;
 }
 
-.NavBar{
+.NavBar {
 	position: fixed;
 	inset: 0;
 	top: 5%;
@@ -30,31 +30,32 @@
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 
-	@include tab(){
+	@include tab() {
 		inset: 0;
 		top: 93%;
 	}
-	@include mob(){
+
+	@include mob() {
 		margin: 0 auto;
 		padding: 1rem 0.5rem;
 		inset: 0;
-		width: 90%;	
+		width: 90%;
 		gap: 1rem;
 		top: 90%;
 	}
 
-	&-a{
+	&-a {
 		color: $base;
 		font-size: $font-size-4;
 		opacity: 0.5;
 
-		&:hover{
+		&:hover {
 			opacity: 1;
 			filter: blur(0px);
 			transition: all 0.3s ease-in-out;
 		}
 
-		@include mob(){
+		@include mob() {
 			font-size: $font-size-4;
 			gap: 0.5rem;
 			line-height: 24px;
@@ -62,7 +63,7 @@
 	}
 }
 
-.Button_Resume{
+.Button_Resume {
 	position: fixed;
 	align-self: flex-end;
 	place-items: flex-end;
@@ -76,29 +77,35 @@
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.164);
 	border: 1px solid rgba(28, 28, 28, 0.3);
 
-	&-button{
+	&-button {
 		color: $base;
 		font-size: $font-size-4;
 		opacity: 0.5;
 
-		&:hover{
+		&:hover {
 			opacity: 1;
 			transition: all 0.3s ease-in-out;
 		}
 	}
 
-	@include des(){
+	@include des() {
 		right: 7%;
 	}
-	@include middle(){
+
+	@include middle() {
 		right: 5%;
 	}
-	@include mob(){
+
+	@include tab() {
+		display: none;
+	}
+
+	@include mob() {
 		// right: 36%;
 		display: none;
 	}
 
-	&::before{
+	&::before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -110,13 +117,13 @@
 		box-shadow: 0 4px 20px rgba(233, 11, 11, 0.884);
 		filter: blur(50px);
 
-		@include des(){
+		@include des() {
 			display: blur(5px);
 		}
 	}
 }
 
-.Button_Language{
+.Button_Language {
 	position: fixed;
 	left: 7%;
 	top: 5%;
@@ -130,30 +137,35 @@
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.164);
 
-	span{
+	@include tab() {
+		padding: 0.6rem 1rem;
+		left: 5%;
+		top: 4%;
+	}
+
+	@include mob() {
+		display: none;
+	}
+
+	span {
 		color: $base;
 		font-size: $font-size-4;
 		opacity: 0.5;
 	}
 
-	&-button{
+	&-button {
 		color: $base;
 		font-size: $font-size-4;
 		opacity: 0.5;
+		border: none;
 
-		&:hover{
+		&:hover {
 			opacity: 1;
 			transition: all 0.3s ease-in-out;
 		}
 	}
 }
 
-.active{
+.active {
 	opacity: 1;
 }
-
-
-
-
-
-

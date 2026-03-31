@@ -54,3 +54,9 @@
 			@content; 
 	}
 }
+
+@mixin xl( $min : 1630px ){
+	@media (min-width: $min) {
+			@content; 
+	}
+}

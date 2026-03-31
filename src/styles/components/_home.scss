@@ -12,6 +12,13 @@
 	justify-content: center;
 	align-items: center;
 	
+	@include middle(){
+		height: 45rem;
+	}
+	@include tab(){
+		height: 38rem;
+		padding: 3rem 0 0 0;
+	}
 	@include mob(){
 		height: auto;
 	}

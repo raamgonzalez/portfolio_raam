@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import Balancer from 'react-wrap-balancer'
 
-export default function Project (props) {
+export default function Project(props) {
   const [t, i18n] = useTranslation('global')
   const { name, descriptionEN, descriptionES, media, mediavideo, soft, urlgit, urldeploy } = props.project
 
@@ -9,13 +9,13 @@ export default function Project (props) {
     <>
       <section className='Project'>
         {
-        mediavideo
-          ? (
-            <video className='Project-video' poster={media} autoPlay loop muted>
-              <source src={mediavideo} type='video/mp4' />
-            </video>
+          mediavideo
+            ? (
+              <video className='Project-video' poster={media} autoPlay loop muted preload='none'>
+                <source src={mediavideo} type='video/mp4' />
+              </video>
             )
-          : (<img className='Project-img' src={media} alt={`Imagen de proyecto de nombre ${name}`} />)
+            : (<img className='Project-img' src={media} alt={`Imagen de proyecto de nombre ${name}`} />)
         }
         <section className='Project-content'>
           <h4 className='Project-name'>{name.toUpperCase()}</h4>

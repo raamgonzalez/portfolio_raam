@@ -65,7 +65,7 @@ function Projects () {
     {
         project.mediavideo
           ? (
-            <video className='Project-project-video' poster={project.media} autoPlay loop muted>
+            <video className='Project-project-video' poster={project.media} autoPlay loop muted preload='none'>
               <source src={project.mediavideo} type='video/mp4' />
             </video>
             )

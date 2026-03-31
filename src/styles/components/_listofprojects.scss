@@ -17,10 +17,10 @@
 		margin: 40rem 0 0 0;
 	}
 	@include tab(){
-		margin: 43rem 0 0 0;
+		margin: 5rem 0 0 0;
 	}
 	@include mob(){
-		margin: 35rem 0 0 0;
+		margin: 4rem 0 0 0;
 	}
 }
 
@@ -34,10 +34,10 @@
 		margin: 55rem 0 0 0;
 	}
 	@include tab(){
-		margin: 50rem 0 0 0;
+		margin: 5rem 0 0 0;
 	}
 	@include mob(){
-		margin: 43rem 0 0 0;
+		margin: 4rem 0 0 0;
 	}
 }
 
@@ -144,7 +144,7 @@
 	}
 	&-content{
 		padding: 0;
-		margin: 0 0 0 240px;
+		margin: 0 0 0 clamp(1.5rem, 12vw, 15rem);
 		width: 40rem;
 		display: flex;
 		flex-direction: column;
@@ -156,10 +156,10 @@
 		line-height: 40px;
 
 		@include gl(){
-			margin: 0 0 0 160px ;
+			margin: 0 0 0 clamp(1rem, 8vw, 10rem);
 		}
 		@include des(){
-			margin: 2rem 0 0 80px;
+			margin: 2rem 0 0 clamp(1rem, 5vw, 5rem);
 		}
 		@include middle(){
 			margin: 0;

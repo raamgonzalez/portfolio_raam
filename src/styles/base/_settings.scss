@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@100;300;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+// Fuentes de Google cargadas en index.html via <link> para evitar bloqueo de render
 
 
 //Imports fonts
@@ -22,7 +21,7 @@
 
 //Fonts
 $font-other: 'Belleza', sans-serif;
-$font-base:  'Archivo Black', sans-serif;
+$font-base: 'Archivo Black', sans-serif;
 $font-base-regular: 'FormularRegular', sans-serif;
 $font-base-light: 'FormularLight', sans-serif;
 
@@ -51,6 +50,4 @@ $title: #F2F2F2;
 $base: #F2E5D2;
 $primary: #131313;
 $secondary: #EBBB0D;
-$tertiary: #B51414; 
-
-
+$tertiary: #B51414;
