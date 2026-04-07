@@ -1,73 +1,84 @@
-.ListOfProjects{
+.ListOfProjects {
 	margin: 70rem 0 0 0;
 
-	&-title{
+	&-title {
 		@include titles()
 	}
-	&-container{
+
+	&-container {
 		display: flex;
 		flex-direction: column;
 		gap: 4rem;
 	}
 
-	@include gl(){
+	@include gl() {
 		margin: 50rem 0 0 0;
 	}
-	@include middle(){
+
+	@include middle() {
 		margin: 40rem 0 0 0;
 	}
-	@include tab(){
+
+	@include tab() {
 		margin: 5rem 0 0 0;
 	}
-	@include mob(){
+
+	@include mob() {
 		margin: 4rem 0 0 0;
 	}
 }
 
-.ListOfProjects--margin{
+.ListOfProjects--margin {
 	margin: 95rem 0 0 0;
 
-	@include gl(){
+	@include gl() {
 		margin: 70rem 0 0 0;
 	}
-	@include middle(){
+
+	@include middle() {
 		margin: 55rem 0 0 0;
 	}
-	@include tab(){
+
+	@include tab() {
 		margin: 5rem 0 0 0;
 	}
-	@include mob(){
+
+	@include mob() {
 		margin: 4rem 0 0 0;
 	}
 }
 
-.Project{
+.Project {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 0 40px 1rem 40px;
 
-  letter-spacing: 0.2rem;
+	letter-spacing: 0.2rem;
 
 
-	@include gl(){
+	@include gl() {
 		padding: 20px 0.5rem 20px;
 	}
-	@include des(){
+
+	@include des() {
 		padding: 20px 0.3rem 20px;
 	}
-	@include middle(){
+
+	@include middle() {
 		flex-direction: column;
 		align-items: center;
 		gap: 2rem;
 	}
-	@include tab(){
+
+	@include tab() {
 		padding: 10px 0.3rem 10px;
 		flex-direction: column;
 		align-items: center;
 		gap: 2rem;
 	}
-	@include mob(){
+
+	@include mob() {
 		padding: 0;
 		flex-direction: column;
 		align-items: center;
@@ -75,74 +86,82 @@
 	}
 
 
-	&-img{
+	&-img {
 		width: 45rem;
 		height: auto;
 		cursor: cell;
 		object-fit: cover;
 		opacity: 0.7;
 		// filter: grayscale(100%);
-		border: solid 10px black;	
+		border: solid 10px black;
 		border-radius: 10px;
 
-		&:hover{
+		&:hover {
 			opacity: 1;
 			filter: grayscale(70%);
 			transition: all 0.3s ease-in-out;
 		}
 
-		@include gl(){
+		@include gl() {
 			width: 40rem;
 			height: auto;
 			align-self: center;
 			place-items: center;
 		}
-		@include des(){
+
+		@include des() {
 			width: 20rem;
 			align-self: center;
 		}
-		@include tab(){
-			border: solid 1px black;	
+
+		@include tab() {
+			border: solid 1px black;
 		}
-		@include mob(){
-			border: solid 1px black;	
+
+		@include mob() {
+			border: solid 1px black;
 		}
 	}
 
-	&-video{
+	&-video {
 		width: 45rem;
 		height: auto;
+		max-height: 35rem;
 		cursor: cell;
 		object-fit: cover;
 		opacity: 0.7;
 		// filter: grayscale(100%);
-		border: solid 10px black;	
+		border: solid 10px black;
 		border-radius: 10px;
 
-		&:hover{
+		&:hover {
 			opacity: 1;
 			filter: grayscale(70%);
 			transition: all 0.3s ease-in-out;
 		}
 
-		@include gl(){
+		@include gl() {
 			width: 40rem;
 			height: auto;
 			align-self: center;
 			place-items: center;
 		}
-		@include des(){
+
+		@include des() {
 			width: 20rem;
 			align-self: center;
 		}
-		@include tab(){
-			border: solid 1px black;	
+
+		@include tab() {
+			border: solid 1px black;
 		}
-		@include mob(){
-			border: solid 1px black;	
+
+		@include mob() {
+			border: solid 1px black;
 		}
 	}
-	&-content{
+
+	&-content {
 		padding: 0;
 		margin: 0 0 0 clamp(1.5rem, 12vw, 15rem);
 		width: 40rem;
@@ -151,48 +170,54 @@
 		justify-content: space-between;
 		gap: 2rem;
 		color: $base;
-		
+
 		font-family: $font-base-regular;
 		line-height: 40px;
 
-		@include gl(){
+		@include gl() {
 			margin: 0 0 0 clamp(1rem, 8vw, 10rem);
 		}
-		@include des(){
+
+		@include des() {
 			margin: 2rem 0 0 clamp(1rem, 5vw, 5rem);
 		}
-		@include middle(){
+
+		@include middle() {
 			margin: 0;
 			width: 100%;
 		}
-		@include tab(){
+
+		@include tab() {
 			margin: 0;
 			width: 100%;
 		}
-		@include mob(){
+
+		@include mob() {
 			margin: 0;
 			width: 100%;
 		}
 
 
-		.Project-name{
+		.Project-name {
 			font-size: $font-size-2;
 			font-family: $font-base;
 			line-height: 3rem;
 		}
-		.Project-description{
+
+		.Project-description {
 			font-size: $font-size-3;
 			font-family: $font-other;
 			line-height: 40px;
 			font-weight: 300;
 
-			@include mob(){
+			@include mob() {
 				font-size: $font-size-4;
 				line-height: 32px;
 			}
 		}
 	}
-	&-soft{
+
+	&-soft {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
@@ -200,92 +225,100 @@
 		font-family: $font-other;
 		font-size: $font-size-4;
 
-		@include mob(){
+		@include mob() {
 			font-size: 12px;
 			gap: 0.5rem;
 			line-height: 24px;
 		}
 
 	}
-	&-links{
+
+	&-links {
 		display: flex;
 		gap: 5rem;
 
-		@include des(){
+		@include des() {
 			gap: 2rem;
 		}
-		@include tab(){
+
+		@include tab() {
 			gap: 1rem
 		}
-		@include mob(){
+
+		@include mob() {
 			gap: 0.5rem
 		}
 	}
-	&-link{
+
+	&-link {
 		@include link(center, 0.5em 1em);
 		border-radius: 10px;
 		border: 1px solid #f2e5d23d;
 		color: $base;
 
-		@include mob(){
+		@include mob() {
 			font-size: 14px;
 		}
 
-		&:hover{
+		&:hover {
 			background-color: $base;
 			color: $primary;
 			transition: all 0.3s ease-in-out;
 		}
-	}	
-	&-link--disabled{
+	}
+
+	&-link--disabled {
 		@include link(center, 0.5em 1em);
 		text-decoration: line-through;
-		@include mob(){
+
+		@include mob() {
 			font-size: 14px;
 		}
 	}
 }
 
-.More_Projects{
+.More_Projects {
 	width: 100%;
 	padding: 0 40px;
 	margin: 160px 0 0 0;
 
-	@include tab(){
+	@include tab() {
 		padding: 0;
 	}
-	@include mob(){
+
+	@include mob() {
 		margin: 160px 0 0 0;
 		padding: 0;
 	}
 }
 
-.Projects{
+.Projects {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 
 
-	&-h4{
+	&-h4 {
 		font-size: $font-size-3;
 
-		@include mob(){
+		@include mob() {
 			font-size: 14px;
 		}
 	}
 
-	&-container--open{
+	&-container--open {
 		margin: 5rem 0 0 0;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
 	}
-	&-container--close{
+
+	&-container--close {
 		display: none;
 	}
 
-	&-button{
+	&-button {
 		border: none;
 		cursor: pointer;
 		width: 3rem;
@@ -293,12 +326,12 @@
 		transition: all 0.5s ease-in-out;
 	}
 
-	&-button-open{
+	&-button-open {
 		transform: rotate(180deg);
 		transition: all 0.5s ease-in-out;
 	}
 
-	&_project{
+	&_project {
 		width: 100%;
 		// padding: 0 5rem;
 		display: grid;
@@ -306,70 +339,77 @@
 		justify-content: center;
 		gap: 5rem;
 
-		@include des(){
+		@include des() {
 			display: grid;
 			grid-template-columns: 0.25fr 0.5fr 1fr 0.25fr;
 		}
-		@include middle(){
+
+		@include middle() {
 			display: grid;
 			grid-template-columns: 0.25fr 1fr 1fr 1fr;
 			gap: 2rem;
 		}
-		@include tab(){
+
+		@include tab() {
 			grid-template-columns: 1fr;
 			gap: 1rem;
 		}
-		@include mob(){
+
+		@include mob() {
 			grid-template-columns: 1fr;
 			gap: 1rem;
 		}
 
 
-		span{
+		span {
 			font-size: $font-size-3;
 			font-family: $font-base-light;
 			align-self: center;
 
-			@include tab(){
+			@include tab() {
 				width: fit-content;
 				display: inline-block;
 			}
 		}
 
-		h4{
+		h4 {
 			display: block;
 			font-size: $font-size-3;
 			font-family: $font-base-light;
 			align-self: center;
 			line-height: 2rem;
 
-			@include middle(){
+			@include middle() {
 				font-size: $font-size-4;
 				width: 100%;
 			}
+
 			// @include tab(){
 			// 	width: fit-content;
 			// }
-			
+
 		}
-		.Projects_project-p{
+
+		.Projects_project-p {
 			font-size: $font-size-3;
 			font-family: $font-other;
 			line-height: 2rem;
 			font-weight: 300;
 			align-self: center;
 
-			@include middle(){
+			@include middle() {
 				font-size: $font-size-4;
 			}
-			@include tab(){
-			}
-			@include mob(){
+
+			@include tab() {}
+
+			@include mob() {
 				font-size: $font-size-4;
 			}
 		}
 
-		video,img{
+		video,
+		img {
 			cursor: cell;
 			opacity: 0.7;
 			place-self: flex-end;
@@ -378,34 +418,35 @@
 			border: solid 2.5px black;
 			border-radius: 10px;
 
-			&:hover{
+			&:hover {
 				z-index: 1;
 				scale: 2;
 				opacity: 1;
 				filter: grayscale(70%);
 				transition: all 0.4s ease-in-out;
 
-				@include tab(){
+				@include tab() {
 					scale: 1.02;
 				}
-				@include mob(){
+
+				@include mob() {
 					scale: 1.02;
 				}
 			}
 
-			@include des(){
+			@include des() {
 				display: none;
 			}
-			@include middle(){
-				display: none;
-			}
-			@include tab(){
 
+			@include middle() {
+				display: none;
 			}
+
+			@include tab() {}
 		}
 	}
 
-	&_project-description{
+	&_project-description {
 		width: 100%;
 		display: grid;
 		font-family: $font-base-regular;
@@ -418,28 +459,32 @@
 		padding: 0 0 2em 0;
 		border-bottom: 1px dotted #2c2c2c;
 
-		@include des(){
+		@include des() {
 			grid-template-columns: 0.25fr 0.5fr 1fr 0.5fr;
-			&--displayimage{
+
+			&--displayimage {
 				display: none;
 			}
 		}
 
-		@include middle(){
+		@include middle() {
 			grid-template-columns: 0.25fr 0.5fr 1fr 0.5fr;
 			gap: 1rem;
-			&--displaydescrip{
+
+			&--displaydescrip {
 				margin: 0 0 0 3rem;
 			}
-			&--displayimage{
+
+			&--displayimage {
 				display: none;
 			}
-			&--displaylinks{
+
+			&--displaylinks {
 				margin: 0 0 0 -3.5rem;
 			}
 		}
 
-		@include tab(){
+		@include tab() {
 			display: none;
 			// grid-template-columns: 0.25 1fr 1fr;
 			// padding: 0 0 1em 0;
@@ -453,12 +498,13 @@
 			// 	margin: 0 0 0 1rem;
 			// }
 		}
-		@include mob(){
+
+		@include mob() {
 			display: none;
 		}
 	}
 
-	&_project-buttons{
+	&_project-buttons {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -466,40 +512,43 @@
 		gap: 1rem;
 		align-self: center;
 
-		@include tab(){
+		@include tab() {
 			gap: 0.5rem;
 			flex-direction: row;
 		}
-		@include mob(){
+
+		@include mob() {
 			gap: 0.5rem;
-			flex-direction: row;	
+			flex-direction: row;
 		}
 	}
 
-	&_project-link{
+	&_project-link {
 		@include link(left, 0.7rem 0.1rem);
 		text-align: center;
 		border-radius: 10px;
 		border: 1px solid #f2e5d23d;
 		width: 12rem;
 
-		@include middle(){
+		@include middle() {
 			width: 8rem;
 		}
-		@include tab(){
+
+		@include tab() {
 			font-size: $font-size-4;
 			width: 100%;
 			gap: 0.5rem;
 			line-height: 24px;
 		}
-		@include mob(){
+
+		@include mob() {
 			font-size: 14px;
 			width: 100%;
 			gap: 0.5rem;
 			line-height: 24px;
 		}
 
-		&:hover{
+		&:hover {
 			background-color: $base;
 			color: $primary;
 			transition: all 0.3s ease-in-out;

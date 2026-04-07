@@ -53,7 +53,7 @@ export const data = {
         'Web que toma los datos de la API del mstateo Met, de New York, proyecto realizado para practicar peticiones',
       soft: ['html', 'css', 'javascript', 'react', 'tailwindcss'],
       media: '/media/projects/project_apimet.jpg',
-      mediavideo: '/media/projects/videos/project_apimet.webm',
+      mediavideo: '/media/projects/videos/project_apimet.mp4',
       urlgit: 'https://github.com/raamgonzalez/apiMET.git',
       urldeploy:
         'https://api-met.vercel.app/',
@@ -107,6 +107,52 @@ export const data = {
     },
     {
       id: uuidv4(),
+      name: 'McCain Verano - MDQ',
+      descriptionEN:
+        'Landing page for a summer campaign in Mar del Plata. It featured a store locator for commercial venues with McCain potato promotions throughout the city. Developed with a focus on mobile-first for tourists.',
+      descriptionES:
+        'Landing page para campaña de verano en Mar del Plata. Incluía un localizador de locales comerciales con promociones de papas McCain en todo MDQ. Desarrollada con enfoque mobile-first para uso en vía pública.',
+      soft: ['html', 'css', 'javascript', 'reactjs', 'sass', 'leaflet'],
+      media: '',
+      mediavideo: '/media/projects/videos/project_mccain.mp4',
+      urlgit: '',
+      urldeploy: '',
+      state: true,
+      important: true
+    },
+    {
+      id: uuidv4(),
+      name: 'Agrimensura DGA',
+      descriptionEN:
+        'Professional website for a Land Surveying firm. Designed to showcase specialized services such as land subdivision, construction surveying, and legal certifications. Focus on corporate identity and service accessibility.',
+      descriptionES:
+        'Sitio web profesional para estudio de agrimensura. Diseñado para presentar servicios especializados como estados parcelarios, amojonamientos y certificaciones. Enfoque en la identidad corporativa y la facilidad de contacto para servicios técnicos.',
+      soft: ['html', 'css', 'javascript', 'reactjs', 'astro'],
+      media: '',
+      mediavideo: '/media/projects/videos/project_webagrimensura.mp4',
+      urlgit: '',
+      urldeploy: 'https://www.agrimensuradga.com/',
+      state: true,
+      important: true
+    },
+    {
+      id: uuidv4(),
+      name: 'Web writer',
+      descriptionEN:
+        "The project was carried out entirely by me, I bet on a sober design that highlights the literary qualities. Designed in Figma and programmed in Astro with CSS, this project helped me practice Astro's island system and React components with TypeScript.",
+      descriptionES:
+        'El proyecto fue realizado íntegramente por mi, aposte por un diseño sobrio que resalte las cualidades literarias. Diseñado en Figma y programado en Astro con CSS, este proyecto me sirvió para practicar el sistema de islas de Astro y componentes React con TypeScript.',
+      soft: ['html', 'css', 'javascript', 'astro', 'typescript'],
+      media: '/media/projects/project_webwriter.jpg',
+      mediavideo: '/media/projects/videos/project_webwriter.mp4',
+      urlgit: '',
+      urldeploy:
+        'https://www.ogiglesias.com.ar/',
+      state: true,
+      important: true
+    },
+    {
+      id: uuidv4(),
       name: 'tente lab',
       descriptionEN:
         'Branding, Rebranding, and Product Photography Agency called Tente Lab. The website is a static page with a form connected to the clients email. I work with a team of UX/UI designers and programmers.',
@@ -114,9 +160,25 @@ export const data = {
         'Agencia de Branding, Rebranding y Fotografía de Productos llamada Tente Lab. La web es una página estática con un formulario conectado al email del cliente. Trabajo con un equipo de diseñadores UX/UI y programadores.',
       soft: ['html', 'css', 'javascript', 'reactjs', 'sass'],
       media: '/media/projects/project_tentelab.jpg',
-      mediavideo: '/media/projects/videos/project_tentelab.webm',
+      mediavideo: '/media/projects/videos/project_tentelab.mp4',
       urlgit: '',
       urldeploy: 'https://tente-lab.vercel.app/',
+      state: true,
+      important: true
+    },
+    {
+      id: uuidv4(),
+      name: 'gifshooot',
+      descriptionEN:
+        'GIF search engine that works with the Giphy API.',
+      descriptionES:
+        'Buscador de gifs, trabaja con APi de Giphy',
+      soft: ['html', 'css', 'javascript', 'react', 'vite', 'framer-motion'],
+      media: '/media/projects/project_gifshooot.jpg',
+      mediavideo: '/media/projects/videos/project_gifshooot.mp4',
+      urlgit: 'https://github.com/raamgonzalez/gifshoot',
+      urldeploy:
+        'https://gifshoot.vercel.app/',
       state: true,
       important: true
     },
@@ -152,22 +214,6 @@ export const data = {
     },
     {
       id: uuidv4(),
-      name: 'Web writer',
-      descriptionEN:
-        "The project was carried out entirely by me, I bet on a sober design that highlights the literary qualities. Designed in Figma and programmed in Astro with CSS, this project helped me practice Astro's island system and React components with TypeScript.",
-      descriptionES:
-        'El proyecto fue realizado íntegramente por mi, aposte por un diseño sobrio que resalte las cualidades literarias. Diseñado en Figma y programado en Astro con CSS, este proyecto me sirvió para practicar el sistema de islas de Astro y componentes React con TypeScript.',
-      soft: ['html', 'css', 'javascript', 'astro', 'typescript'],
-      media: '/media/projects/project_webwriter.jpg',
-      mediavideo: '/media/projects/videos/project_webwriter.webm',
-      urlgit: '',
-      urldeploy:
-        'https://www.ogiglesias.com.ar/',
-      state: true,
-      important: true
-    },
-    {
-      id: uuidv4(),
       name: 'landing-page lamparas',
       descriptionEN:
         'Website created for a full-stack Python programming course.',
@@ -191,7 +237,7 @@ export const data = {
         'Web para tienda de camisetas de futbol realizada en javascript vanilla',
       soft: ['html', 'css', 'javascript'],
       media: '/media/projects/project_camisetasdprimera.jpg',
-      mediavideo: '/media/projects/videos/project_camisetasdeprimera.webm',
+      mediavideo: '/media/projects/videos/project_camisetasdeprimera.mp4',
       urlgit: 'https://github.com/raamgonzalez/Ecommerce-Camisetas_Javascript',
       urldeploy: 'https://ecommerce-camisetasde1.netlify.app/',
       state: true,
@@ -246,22 +292,6 @@ export const data = {
     },
     {
       id: uuidv4(),
-      name: 'gifshooot',
-      descriptionEN:
-        'GIF search engine that works with the Giphy API.',
-      descriptionES:
-        'Buscador de gifs, trabaja con APi de Giphy',
-      soft: ['html', 'css', 'javascript', 'react', 'vite', 'framer-motion'],
-      media: '/media/projects/project_gifshooot.jpg',
-      mediavideo: '/media/projects/videos/project_gifshooot.webm',
-      urlgit: 'https://github.com/raamgonzalez/gifshoot',
-      urldeploy:
-        'https://gifshoot.vercel.app/',
-      state: true,
-      important: true
-    },
-    {
-      id: uuidv4(),
       name: 'blog arquitectura',
       descriptionEN:
         'Architecture blog that includes an admin console and cards featuring architectural works and architects.',
@@ -299,7 +329,7 @@ export const data = {
         'En este proyecto utilice librerías como Swiper y Framer Motion para las animaciones, ademas de seguir trabajando CSS nativo con sus nuevas funciones.',
       soft: ['html', 'css', 'javascript', 'vue', 'vite', 'Framer motion', 'Swiper'],
       media: '/media/projects/project_gringolandia.jpg',
-      mediavideo: '/media/projects/videos/project_gringolandia.webm',
+      mediavideo: '/media/projects/videos/project_gringolandia.mp4',
       urlgit: '',
       urldeploy:
         'https://www.gringolandiaenglish.com/',
