@@ -155,10 +155,12 @@
 
 		@include tab() {
 			border: solid 1px black;
+			max-height: 17rem;
 		}
 
 		@include mob() {
 			border: solid 1px black;
+			max-height: 15rem;
 		}
 	}
 
