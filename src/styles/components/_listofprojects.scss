@@ -142,13 +142,14 @@
 
 		@include gl() {
 			width: 40rem;
-			height: auto;
+			max-height: 30rem;
 			align-self: center;
 			place-items: center;
 		}
 
 		@include des() {
 			width: 20rem;
+			max-height: 15rem;
 			align-self: center;
 		}
 
